@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BOMs" targetNamespace="http://tempuri.org/BOMs.xsd" xmlns:mstns="http://tempuri.org/BOMs.xsd" xmlns="http://tempuri.org/BOMs.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BOMs" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="BOMs" msprop:Generator_UserDSName="BOMs">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BOMs" msprop:Generator_TableClassName="BOMsDataTable" msprop:Generator_TableVarName="tableBOMs" msprop:Generator_TablePropName="_BOMs" msprop:Generator_RowDeletingName="BOMsRowDeleting" msprop:Generator_RowChangingName="BOMsRowChanging" msprop:Generator_RowEvHandlerName="BOMsRowChangeEventHandler" msprop:Generator_RowDeletedName="BOMsRowDeleted" msprop:Generator_UserTableName="BOMs" msprop:Generator_RowChangedName="BOMsRowChanged" msprop:Generator_RowEvArgName="BOMsRowChangeEvent" msprop:Generator_RowClassName="BOMsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SAP_m_n" msprop:Generator_ColumnVarNameInTable="columnSAP_m_n" msprop:Generator_ColumnPropNameInRow="SAP_m_n" msprop:Generator_ColumnPropNameInTable="SAP_m_nColumn" msprop:Generator_UserColumnName="SAP_m_n" type="xs:string" minOccurs="0" />
+              <xs:element name="SAP_Description" msprop:Generator_ColumnVarNameInTable="columnSAP_Description" msprop:Generator_ColumnPropNameInRow="SAP_Description" msprop:Generator_ColumnPropNameInTable="SAP_DescriptionColumn" msprop:Generator_UserColumnName="SAP_Description" type="xs:string" minOccurs="0" />
+              <xs:element name="SAP_Cost" msprop:Generator_ColumnVarNameInTable="columnSAP_Cost" msprop:Generator_ColumnPropNameInRow="SAP_Cost" msprop:Generator_ColumnPropNameInTable="SAP_CostColumn" msprop:Generator_UserColumnName="SAP_Cost" type="xs:string" minOccurs="0" />
+              <xs:element name="Conduit" msprop:Generator_ColumnVarNameInTable="columnConduit" msprop:Generator_ColumnPropNameInRow="Conduit" msprop:Generator_ColumnPropNameInTable="ConduitColumn" msprop:Generator_UserColumnName="Conduit" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

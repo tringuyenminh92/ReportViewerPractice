@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="639fa1179c634d86afdf5ec5ec9f4274" Name="Diagram1">
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Accumulators" Width="1.5" PointX="17.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_ANSIPiping" Width="1.5" PointX="17.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_AppRole" Width="1.5" PointX="10" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_BillToCustomerDetails" Width="1.5" PointX="5.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Conduit" Width="1.5" PointX="14.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Configuration" Width="1.5" PointX="17.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_DocumentLink" Width="1.5" PointX="8" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_DocumentLinkCategory" Width="1.5" PointX="5.75" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Fields" Width="1.5" PointX="12.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Fields_Value" Width="1.5" PointX="15" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Flange_type" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_FlangePad" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_FlangePattern" Width="1.5" PointX="17.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Flanges" Width="1.5" PointX="5.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Labor" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_LABOR_DATA" Width="1.5" PointX="3" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_labor_variables" Width="1.5" PointX="7.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_LaborCostFactors" Width="1.5" PointX="9.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_LaborCostFactors_ShippableAssembly" Width="1.5" PointX="13" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_MotorHorsePower" Width="1.5" PointX="19.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_MotorManufacturer" Width="1.5" PointX="19.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_MotorRPM" Width="1.5" PointX="19.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_MotorVoltage" Width="1.5" PointX="19.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Piping_Clamp" Width="1.5" PointX="11.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Piping_Fitting" Width="1.5" PointX="19.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Piping_Flang" Width="1.5" PointX="13.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Piping_Hour_Details" Width="1.5" PointX="19.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Piping_Kick" Width="1.5" PointX="15.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Piping_NPT_PipeConn" Width="1.5" PointX="17.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Piping_PipeConnect" Width="1.5" PointX="19.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Piping_ThrededFitting" Width="1.5" PointX="21.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Piping_TubeConnect" Width="1.5" PointX="21.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_PipingComponent_Values" Width="1.5" PointX="21.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_PipingComponents" Width="1.5" PointX="21.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_PipingLabor_Data" Width="1.5" PointX="21.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_PipingLaborConfiguration" Width="1.5" PointX="21.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_PipingLaborForCSSS" Width="1.5" PointX="23.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_PipingLaborPaintRequirement" Width="1.5" PointX="23.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_PipingMaterial" Width="1.5" PointX="5.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_PipingSchedule" Width="1.5" PointX="23.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_PipingSchemMapping" Width="1.5" PointX="7.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_PipingSize" Width="1.5" PointX="9.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Product" Width="1.5" PointX="23.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_qts_All_SAP_Motors" Width="1.5" PointX="11.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Quote_Details" Width="1.5" PointX="23.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Quote_Parts" Width="1.5" PointX="23.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Quote_Sections" Width="1.5" PointX="3" PointY="35.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Quote_Sections_old" Width="1.5" PointX="15" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Quote_Sub" Width="1.5" PointX="3" PointY="42.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Quotes" Width="1.5" PointX="0.75" PointY="21.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Quotes_old" Width="1.5" PointX="12.75" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_ResInfo" Width="1.5" PointX="13.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Roles" Width="1.5" PointX="7.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_SalesGroup" Width="1.5" PointX="5.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_SalesOffice" Width="1.5" PointX="5.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_ShippableAssembly" Width="1.5" PointX="10.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_status" Width="1.5" PointX="15.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_UserRoles" Width="1.5" PointX="12.25" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Users" Width="1.5" PointX="10" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Contact_Information" Width="1.5" PointX="25.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Custom_Customers" Width="1.5" PointX="25.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Flangetype" Width="1.5" PointX="25.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_LABOR_DATA_Tmp" Width="1.5" PointX="25.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Labor_Tmp" Width="1.5" PointX="17.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_MaterialCostFactors" Width="1.5" PointX="19.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Piping_PaintDetail" Width="1.5" PointX="27.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_PipingLabor_Data_Tmp" Width="1.5" PointX="27.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_PipingType" Width="1.5" PointX="27.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_qts_tblPUAdescr" Width="1.5" PointX="27.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Quote_Parts_Tmp" Width="1.5" PointX="27.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Quote_Sections_Tmp" Width="1.5" PointX="27.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_Quote_Sub_Tmp" Width="1.5" PointX="5.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_sap_customer" Width="1.5" PointX="8" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_SAPCustomersImport_Temp" Width="1.5" PointX="7.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuoteSystemModel.T_sapmats" Width="1.5" PointX="21.75" PointY="28.75" IsExpanded="true" />
+        <AssociationConnector Association="QuoteSystemModel.FK_T_UserRoles_T_AppRole" ManuallyRouted="false" />
+        <AssociationConnector Association="QuoteSystemModel.FK_T_DocumentLink_T_DocumentLinkCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="QuoteSystemModel.FK_T_Fields_Value_T_Fields" ManuallyRouted="false" />
+        <AssociationConnector Association="QuoteSystemModel.FK_T_Labor_T_QuotesA" ManuallyRouted="false" />
+        <AssociationConnector Association="QuoteSystemModel.FK_T_LABOR_DATA_T_QuotesA" ManuallyRouted="false" />
+        <AssociationConnector Association="QuoteSystemModel.FK_T_LaborCostFactors_ShippableAssembly_T_ShippableAssemblyB" ManuallyRouted="false" />
+        <AssociationConnector Association="QuoteSystemModel.FK_T_Quote_Sections_T_Quote_Sections1" ManuallyRouted="false" />
+        <AssociationConnector Association="QuoteSystemModel.FK_T_Quote_Sections_T_Quote_Sections" ManuallyRouted="false" />
+        <AssociationConnector Association="QuoteSystemModel.FK_T_Quote_Sub_T_QuotesA" ManuallyRouted="false" />
+        <AssociationConnector Association="QuoteSystemModel.FK__T_Users__RoleId__382F5661" ManuallyRouted="false" />
+        <AssociationConnector Association="QuoteSystemModel.FK_T_sap_customer_T_SalesGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="QuoteSystemModel.FK_T_sap_customer_T_SalesOffice" ManuallyRouted="false" />
+        <AssociationConnector Association="QuoteSystemModel.FK_T_UserRoles_T_Users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

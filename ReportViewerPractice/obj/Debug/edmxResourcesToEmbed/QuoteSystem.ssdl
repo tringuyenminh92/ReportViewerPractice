@@ -1,0 +1,2365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QuoteSystemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="T_Accumulators">
+    <Key>
+      <PropertyRef Name="AccumulatorId" />
+    </Key>
+    <Property Name="PN" Type="nvarchar" MaxLength="255" />
+    <Property Name="MaterialNumber" Type="nvarchar" MaxLength="255" />
+    <Property Name="QuoteDescription" Type="nvarchar" MaxLength="255" />
+    <Property Name="StandardPrice" Type="float" />
+    <Property Name="MG2" Type="nvarchar" MaxLength="255" />
+    <Property Name="Class" Type="nvarchar" MaxLength="255" />
+    <Property Name="info1" Type="nvarchar" MaxLength="255" />
+    <Property Name="info2" Type="nvarchar" MaxLength="255" />
+    <Property Name="info3" Type="nvarchar" MaxLength="255" />
+    <Property Name="info4" Type="nvarchar" MaxLength="255" />
+    <Property Name="info5" Type="nvarchar" MaxLength="255" />
+    <Property Name="info6" Type="nvarchar" MaxLength="255" />
+    <Property Name="info7" Type="nvarchar" MaxLength="255" />
+    <Property Name="info8" Type="nvarchar" MaxLength="255" />
+    <Property Name="info9" Type="nvarchar" MaxLength="255" />
+    <Property Name="info10" Type="nvarchar" MaxLength="255" />
+    <Property Name="AccumulatorId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'DB_SETi_SQL.dbo.T_All_SAP_Motors' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="T_All_SAP_Motors">
+          <Property Name="PN" Type="nvarchar" MaxLength="255" />
+          <Property Name="MaterialNumber" Type="nvarchar" MaxLength="255" />
+          <Property Name="StandardPrice" Type="nvarchar" MaxLength="255" />
+          <Property Name="MG2" Type="nvarchar" MaxLength="255" />
+          <Property Name="ClassCode" Type="nvarchar" MaxLength="255" />
+          <Property Name="QuoteDescription" Type="nvarchar" MaxLength="255" />
+          <Property Name="Info1" Type="nvarchar" MaxLength="255" />
+          <Property Name="Info2" Type="nvarchar" MaxLength="255" />
+          <Property Name="Info3" Type="nvarchar" MaxLength="255" />
+          <Property Name="Info4" Type="nvarchar" MaxLength="255" />
+          <Property Name="Info5" Type="nvarchar" MaxLength="255" />
+          <Property Name="Info6" Type="nvarchar" MaxLength="255" />
+          <Property Name="Info7" Type="nvarchar" MaxLength="255" />
+          <Property Name="Info8" Type="nvarchar" MaxLength="255" />
+          <Property Name="Info9" Type="nvarchar" MaxLength="255" />
+          <Property Name="Info10" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+  <EntityType Name="T_ANSIPiping">
+    <Key>
+      <PropertyRef Name="PipingId" />
+    </Key>
+    <Property Name="PipingId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SAP_m_n" Type="nvarchar" MaxLength="300" />
+    <Property Name="SAP_Description" Type="nvarchar" MaxLength="300" />
+    <Property Name="Description" Type="nvarchar" MaxLength="300" />
+    <Property Name="SAP_Cost" Type="money" />
+    <Property Name="Cost" Type="money" />
+    <Property Name="Conduit" Type="nvarchar" MaxLength="250" />
+    <Property Name="Units" Type="nvarchar" MaxLength="250" />
+    <Property Name="Material" Type="nvarchar" MaxLength="250" />
+    <Property Name="Joint" Type="nvarchar" MaxLength="250" />
+    <Property Name="Size" Type="nvarchar" MaxLength="250" />
+    <Property Name="Size_Unit" Type="nvarchar" MaxLength="250" />
+    <Property Name="Schedule" Type="nvarchar" MaxLength="250" />
+    <Property Name="Component" Type="nvarchar" MaxLength="250" />
+    <Property Name="Type" Type="nvarchar" MaxLength="250" />
+    <Property Name="Paint_Requirement" Type="nvarchar" MaxLength="250" />
+    <Property Name="Weld_Time" Type="float" />
+    <Property Name="Cut_Prep" Type="float" />
+    <Property Name="Assemble" Type="float" />
+    <Property Name="MTL1" Type="money" />
+    <Property Name="MTL2" Type="money" />
+    <Property Name="Total" Type="money" />
+    <Property Name="HrsWeld" Type="float" />
+    <Property Name="HrsAssy" Type="float" />
+    <Property Name="Schem_Component" Type="nvarchar" MaxLength="250" />
+    <Property Name="MTLsub" Type="money" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'DB_SETi_SQL.dbo.T_ANSIPipingold' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="T_ANSIPipingold">
+          <Property Name="SAP m/n" Type="nvarchar" MaxLength="255" />
+          <Property Name="SAP description" Type="nvarchar" MaxLength="255" />
+          <Property Name="Description" Type="nvarchar" MaxLength="255" />
+          <Property Name="SAP cost" Type="money" />
+          <Property Name="Cost" Type="money" />
+          <Property Name="rating" Type="nvarchar" MaxLength="255" />
+          <Property Name="Type" Type="nvarchar" MaxLength="255" />
+          <Property Name="Size" Type="float" />
+          <Property Name="sch" Type="float" />
+          <Property Name="mtl" Type="nvarchar" MaxLength="255" />
+          <Property Name="F11" Type="nvarchar" MaxLength="255" />
+          <Property Name="F12" Type="nvarchar" MaxLength="255" />
+          <Property Name="MTL1" Type="nvarchar" MaxLength="255" />
+          <Property Name="MTL2" Type="nvarchar" MaxLength="255" />
+          <Property Name="weld time" Type="float" />
+          <Property Name="cut&amp;prep" Type="float" />
+          <Property Name="assemble" Type="float" />
+          <Property Name="TOTAL" Type="float" />
+          <Property Name="MTLsub" Type="money" />
+          <Property Name="hrsweld" Type="float" />
+          <Property Name="hrsassy" Type="float" />
+        </EntityType>-->
+  <EntityType Name="T_AppRole">
+    <Key>
+      <PropertyRef Name="AppRoleId" />
+    </Key>
+    <Property Name="AppRoleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AppRoleName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AppRoleDescription" Type="nvarchar" MaxLength="100" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'DB_SETi_SQL.dbo.T_Bellhousings' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="T_Bellhousings">
+          <Property Name="ID" Type="float" />
+          <Property Name="MTR_CODE" Type="nvarchar" MaxLength="255" />
+          <Property Name="framesize" Type="nvarchar" MaxLength="255" />
+          <Property Name="pumpmanu" Type="nvarchar" MaxLength="255" />
+          <Property Name="p_model" Type="nvarchar" MaxLength="255" />
+          <Property Name="p_size" Type="nvarchar" MaxLength="255" />
+          <Property Name="P_SHAFT" Type="nvarchar" MaxLength="255" />
+          <Property Name="p_mtg_flg" Type="nvarchar" MaxLength="255" />
+          <Property Name="coupling" Type="nvarchar" MaxLength="255" />
+          <Property Name="VERT_HORZ" Type="nvarchar" MaxLength="255" />
+          <Property Name="bellhousing" Type="nvarchar" MaxLength="255" />
+          <Property Name="f_f" Type="float" />
+          <Property Name="PART_NO" Type="nvarchar" MaxLength="255" />
+          <Property Name="BELL_QT" Type="float" />
+          <Property Name="BELL_COST" Type="money" />
+          <Property Name="M_CPL" Type="nvarchar" MaxLength="255" />
+          <Property Name="M_CPL_PN" Type="nvarchar" MaxLength="255" />
+          <Property Name="M_CPL_QT" Type="float" />
+          <Property Name="M_CPL_COST" Type="nvarchar" MaxLength="255" />
+          <Property Name="CPL_I" Type="nvarchar" MaxLength="255" />
+          <Property Name="CPL_I_PN" Type="nvarchar" MaxLength="255" />
+          <Property Name="CPL_I_QT" Type="float" />
+          <Property Name="CPL_I_COST" Type="nvarchar" MaxLength="255" />
+          <Property Name="P_CPL" Type="nvarchar" MaxLength="255" />
+          <Property Name="P_CPL_PN" Type="nvarchar" MaxLength="255" />
+          <Property Name="P_CPL_QT" Type="float" />
+          <Property Name="P_CPL_COST" Type="nvarchar" MaxLength="255" />
+          <Property Name="FRAME" Type="nvarchar" MaxLength="255" />
+          <Property Name="FRAME_PN" Type="nvarchar" MaxLength="255" />
+          <Property Name="FRAME_QT" Type="nvarchar" MaxLength="255" />
+          <Property Name="FRAME_COST" Type="nvarchar" MaxLength="255" />
+          <Property Name="SHOCK" Type="nvarchar" MaxLength="255" />
+          <Property Name="SHOCK_PN" Type="nvarchar" MaxLength="255" />
+          <Property Name="SHOCK_QT" Type="nvarchar" MaxLength="255" />
+          <Property Name="SHOCK_COST" Type="nvarchar" MaxLength="255" />
+          <Property Name="BM" Type="nvarchar" MaxLength="255" />
+          <Property Name="V_MTG_PL" Type="nvarchar" MaxLength="255" />
+          <Property Name="V_MTG_PL_PN" Type="nvarchar" MaxLength="255" />
+          <Property Name="V_MTG_PL_QT" Type="nvarchar" MaxLength="255" />
+          <Property Name="V_MTG_PL_COST" Type="nvarchar" MaxLength="255" />
+          <Property Name="Add" Type="bit" />
+        </EntityType>-->
+  <EntityType Name="T_BillToCustomerDetails">
+    <Key>
+      <PropertyRef Name="BillToCustomerId" />
+    </Key>
+    <Property Name="BillToCustomerId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerRole" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerRoleDescription" Type="nvarchar" MaxLength="100" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="T_Conduit">
+    <Key>
+      <PropertyRef Name="Conduit_ID" />
+    </Key>
+    <Property Name="Conduit_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Size_Min" Type="float" />
+    <Property Name="Size_Max" Type="float" />
+    <Property Name="Assembly_hrs" Type="float" />
+    <Property Name="flgStatus" Type="bit" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_Configuration">
+    <Key>
+      <PropertyRef Name="Config_No" />
+    </Key>
+    <Property Name="Config_No" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Config_Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Config_Value" Type="nvarchar(max)" />
+    <Property Name="Config_Date" Type="datetime" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_SETi_SQL.dbo.T_Contact_Information' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="T_Contact_Information">
+    <Key>
+      <PropertyRef Name="Auto" />
+    </Key>
+    <Property Name="Auto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Quote_Auto" Type="int" />
+    <Property Name="contact_salutation" Type="nvarchar" MaxLength="10" />
+    <Property Name="contact_fname" Type="nvarchar" MaxLength="100" />
+    <Property Name="contact_lname" Type="nvarchar" MaxLength="100" />
+    <Property Name="contact_telbus" Type="nvarchar" MaxLength="100" />
+    <Property Name="contact_telmobile" Type="nvarchar" MaxLength="100" />
+    <Property Name="contact_telfax" Type="nvarchar" MaxLength="100" />
+    <Property Name="contact_email" Type="nvarchar" MaxLength="100" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar(max)" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_SETi_SQL.dbo.T_Custom_Customers' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="T_Custom_Customers">
+    <Key>
+      <PropertyRef Name="Auto" />
+    </Key>
+    <Property Name="Auto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Quote_Auto" Type="int" />
+    <Property Name="Customer_Type" Type="int" />
+    <Property Name="Cust_Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Cust_Street" Type="nvarchar" MaxLength="255" />
+    <Property Name="Cust_City" Type="nvarchar" MaxLength="255" />
+    <Property Name="Cust_Zip" Type="nvarchar" MaxLength="255" />
+    <Property Name="Cust_State" Type="nvarchar" MaxLength="255" />
+    <Property Name="Cust_Country" Type="nvarchar" MaxLength="255" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar(max)" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="IsValidCustType" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'DB_SETi_SQL.dbo.T_Design' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="T_Design">
+          <Property Name="QN" Type="varchar" MaxLength="50" />
+          <Property Name="Titleblock" Type="varchar" MaxLength="50" />
+          <Property Name="Dimensioning" Type="varchar" MaxLength="50" />
+          <Property Name="ReservoirStyle" Type="varchar" MaxLength="50" />
+          <Property Name="Manuals" Type="varchar" MaxLength="50" />
+          <Property Name="papermanual" Type="varchar" MaxLength="50" />
+          <Property Name="electronicmanual" Type="varchar" MaxLength="50" />
+          <Property Name="papmanqty" Type="varchar" MaxLength="50" />
+          <Property Name="elecmanqty" Type="varchar" MaxLength="50" />
+          <Property Name="schematic" Type="varchar" MaxLength="50" />
+          <Property Name="wiring" Type="varchar" MaxLength="50" />
+          <Property Name="sealtitewiring" Type="varchar" MaxLength="50" />
+          <Property Name="standardwiring" Type="varchar" MaxLength="50" />
+          <Property Name="explosionwiring" Type="varchar" MaxLength="50" />
+          <Property Name="wiringqty" Type="char" MaxLength="10" />
+        </EntityType>-->
+  <EntityType Name="T_DocumentLink">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CategoryId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Url" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="500" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_DocumentLinkCategory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_Fields">
+    <Key>
+      <PropertyRef Name="FieldId" />
+    </Key>
+    <Property Name="FieldId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FieldName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FieldDescription" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="T_Fields_Value">
+    <Key>
+      <PropertyRef Name="FieldValueId" />
+    </Key>
+    <Property Name="FieldValueId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FieldId" Type="int" />
+    <Property Name="FieldValueName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FieldValueDescription" Type="nvarchar(max)" />
+    <Property Name="FieldValueNameId" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'DB_SETi_SQL.dbo.T_Filters' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="T_Filters">
+          <Property Name="PN" Type="nvarchar" MaxLength="255" />
+          <Property Name="MaterialNumber" Type="nvarchar" MaxLength="255" />
+          <Property Name="StandardPrice" Type="float" />
+          <Property Name="MG2" Type="nvarchar" MaxLength="255" />
+          <Property Name="ClassCode" Type="nvarchar" MaxLength="255" />
+          <Property Name="QuoteDescription" Type="nvarchar" MaxLength="255" />
+          <Property Name="INFO1" Type="nvarchar" MaxLength="255" />
+          <Property Name="INFO2" Type="smallint" />
+          <Property Name="INFO3" Type="nvarchar" MaxLength="255" />
+          <Property Name="INFO4" Type="smallint" />
+          <Property Name="INFO5" Type="smallint" />
+          <Property Name="INFO6" Type="nvarchar" MaxLength="255" />
+          <Property Name="INFO7" Type="nvarchar" MaxLength="255" />
+          <Property Name="INFO8" Type="nvarchar" MaxLength="50" />
+          <Property Name="INFO9" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+  <EntityType Name="T_Flange type">
+    <Key>
+      <PropertyRef Name="FlangetypeID" />
+    </Key>
+    <Property Name="FlangetypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Flange type" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_FlangePad">
+    <Key>
+      <PropertyRef Name="FlangePadID" />
+    </Key>
+    <Property Name="FlangePadID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Flange Pad" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_FlangePattern">
+    <Key>
+      <PropertyRef Name="FlangePatternID" />
+    </Key>
+    <Property Name="FlangePatternID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Flange Pattern" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_Flanges">
+    <Key>
+      <PropertyRef Name="FlangeId" />
+    </Key>
+    <Property Name="PN" Type="nvarchar" MaxLength="255" />
+    <Property Name="MaterialNumber" Type="nvarchar" MaxLength="255" />
+    <Property Name="QuoteDescription" Type="nvarchar" MaxLength="255" />
+    <Property Name="StandardPrice" Type="float" />
+    <Property Name="MG2" Type="nvarchar" MaxLength="255" />
+    <Property Name="Class" Type="nvarchar" MaxLength="255" />
+    <Property Name="INFO1" Type="nvarchar" MaxLength="255" />
+    <Property Name="INFO2" Type="nvarchar" MaxLength="255" />
+    <Property Name="INFO3" Type="nvarchar" MaxLength="255" />
+    <Property Name="INFO4" Type="nvarchar" MaxLength="255" />
+    <Property Name="INFO5" Type="nvarchar" MaxLength="255" />
+    <Property Name="INFO6" Type="nvarchar" MaxLength="255" />
+    <Property Name="INFO7" Type="nvarchar" MaxLength="255" />
+    <Property Name="FlangeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_SETi_SQL.dbo.T_Flangetype' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="T_Flangetype">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Flange type" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Flange type" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_Labor">
+    <Key>
+      <PropertyRef Name="auto" />
+    </Key>
+    <Property Name="QN" Type="int" Nullable="false" />
+    <Property Name="SN" Type="int" Nullable="false" />
+    <Property Name="engineering" Type="money" />
+    <Property Name="design" Type="money" />
+    <Property Name="assembly" Type="money" />
+    <Property Name="wiring" Type="money" />
+    <Property Name="welding" Type="money" />
+    <Property Name="test" Type="money" />
+    <Property Name="paint" Type="money" />
+    <Property Name="documentation" Type="money" />
+    <Property Name="labor_total" Type="money" />
+    <Property Name="labor_margin" Type="int" />
+    <Property Name="labor_net_total" Type="money" />
+    <Property Name="auto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WiringDesign" Type="float" />
+    <Property Name="TestHydraulic" Type="float" />
+    <Property Name="TestSound" Type="float" />
+    <Property Name="TestVibration" Type="float" />
+    <Property Name="ShippingTag" Type="float" />
+    <Property Name="PickParts" Type="float" />
+    <Property Name="TotalLaborDollars" Type="float" />
+    <Property Name="TotalLabor" Type="float" />
+    <Property Name="CreatedBy" Type="nvarchar(max)" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar(max)" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="SubassemblyID" Type="int" />
+    <Property Name="ControlsEngineering" Type="float" />
+    <Property Name="Programming" Type="float" />
+    <Property Name="IM_Machining_Man" Type="float" />
+    <Property Name="IM_Machining_CNC" Type="float" />
+  </EntityType>
+  <EntityType Name="T_LABOR_DATA">
+    <Key>
+      <PropertyRef Name="auto" />
+    </Key>
+    <Property Name="QN" Type="int" Nullable="false" />
+    <Property Name="SN" Type="int" Nullable="false" />
+    <Property Name="DTMPQTY" Type="bigint" />
+    <Property Name="DTMEQTY" Type="bigint" />
+    <Property Name="TDRC" Type="bigint" />
+    <Property Name="TDNC" Type="bigint" />
+    <Property Name="LDLQQTY" Type="bigint" />
+    <Property Name="COMPACCPUA" Type="bigint" />
+    <Property Name="COMPACCSPEC" Type="bigint" />
+    <Property Name="COMBREPUA" Type="bigint" />
+    <Property Name="COMBRESPEC" Type="bigint" />
+    <Property Name="COMCLEPUA" Type="bigint" />
+    <Property Name="COMCLESPEC" Type="bigint" />
+    <Property Name="COMFILPUA" Type="bigint" />
+    <Property Name="COMFILSPEC" Type="bigint" />
+    <Property Name="COMFLSWPUA" Type="bigint" />
+    <Property Name="COMFLSWSPEC" Type="bigint" />
+    <Property Name="COMGUAPUA" Type="bigint" />
+    <Property Name="COMGUASPEC" Type="bigint" />
+    <Property Name="COMGPPUA" Type="bigint" />
+    <Property Name="COMGPSPEC" Type="bigint" />
+    <Property Name="COMHEAPUA" Type="bigint" />
+    <Property Name="COMHEASPEC" Type="bigint" />
+    <Property Name="COMAHEPUA" Type="bigint" />
+    <Property Name="COMAHESPEC" Type="bigint" />
+    <Property Name="COMWHEPUA" Type="bigint" />
+    <Property Name="COMWHESPEC" Type="bigint" />
+    <Property Name="COMHOSPUA" Type="bigint" />
+    <Property Name="COMHOSSPEC" Type="bigint" />
+    <Property Name="COMMMPUA" Type="bigint" />
+    <Property Name="COMMMSPEC" Type="bigint" />
+    <Property Name="COMSVPUA" Type="bigint" />
+    <Property Name="COMSVSPEC" Type="bigint" />
+    <Property Name="COMSGPUA" Type="bigint" />
+    <Property Name="COMSGSPEC" Type="bigint" />
+    <Property Name="COMVPPUA" Type="bigint" />
+    <Property Name="COMVPSPEC" Type="bigint" />
+    <Property Name="COMTSPUA" Type="bigint" />
+    <Property Name="COMTSSPEC" Type="bigint" />
+    <Property Name="COMTPUA" Type="bigint" />
+    <Property Name="COMTSPEC" Type="bigint" />
+    <Property Name="MPGCC1" Type="bigint" />
+    <Property Name="MPGCC2" Type="bigint" />
+    <Property Name="MPGCC3" Type="bigint" />
+    <Property Name="MPGCC4" Type="bigint" />
+    <Property Name="MPGHB1" Type="bigint" />
+    <Property Name="MPGHB2" Type="bigint" />
+    <Property Name="MPGHB3" Type="bigint" />
+    <Property Name="MPGHB4" Type="bigint" />
+    <Property Name="MPGHB5" Type="bigint" />
+    <Property Name="MPGVB1" Type="bigint" />
+    <Property Name="MPGVB2" Type="bigint" />
+    <Property Name="MPGVB3" Type="bigint" />
+    <Property Name="MPGVB4" Type="bigint" />
+    <Property Name="MPGVB5" Type="bigint" />
+    <Property Name="MPGVS1" Type="bigint" />
+    <Property Name="MPGVS2" Type="bigint" />
+    <Property Name="MPGVS3" Type="bigint" />
+    <Property Name="MPGVS4" Type="bigint" />
+    <Property Name="MPGVS5" Type="bigint" />
+    <Property Name="ResType" Type="varchar" MaxLength="50" />
+    <Property Name="ElecConnections" Type="int" />
+    <Property Name="SoundTestFlowAndPressure" Type="bit" />
+    <Property Name="SoundTestFlow" Type="bit" />
+    <Property Name="SoundTestDeadhead" Type="bit" />
+    <Property Name="VibrationTestFlowAndPressure" Type="bit" />
+    <Property Name="VibrationTestFlow" Type="bit" />
+    <Property Name="VibrationTestDeadhead" Type="bit" />
+    <Property Name="VibrationNumTestPoints" Type="smallint" />
+    <Property Name="CustomerTitleBlock" Type="bit" />
+    <Property Name="SpecialDimensioning" Type="bit" />
+    <Property Name="ResStyle" Type="smallint" />
+    <Property Name="ComplexSchematic" Type="bit" />
+    <Property Name="LabelType" Type="smallint" />
+    <Property Name="CustomerWitness" Type="smallint" />
+    <Property Name="CableType" Type="smallint" />
+    <Property Name="CableExplosion" Type="bit" />
+    <Property Name="CableQty" Type="smallint" />
+    <Property Name="FittingType" Type="smallint" />
+    <Property Name="Fitting1Qty" Type="smallint" />
+    <Property Name="Fitting2Qty" Type="smallint" />
+    <Property Name="Fitting3Qty" Type="smallint" />
+    <Property Name="Fitting4Qty" Type="smallint" />
+    <Property Name="PanelMtdValvesStd" Type="smallint" />
+    <Property Name="PanelMtdValvesNonStd" Type="smallint" />
+    <Property Name="ElecBoxStd" Type="smallint" />
+    <Property Name="ElecBoxNonStd" Type="smallint" />
+    <Property Name="auto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar(max)" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar(max)" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="SubassemblyID" Type="int" />
+    <Property Name="Adjustengineering" Type="float" />
+    <Property Name="Adjustdesign" Type="float" />
+    <Property Name="AdjustWiringDesign" Type="float" />
+    <Property Name="AdjustPickParts" Type="float" />
+    <Property Name="Adjustwiring" Type="float" />
+    <Property Name="Adjustwelding" Type="float" />
+    <Property Name="Adjusttest" Type="float" />
+    <Property Name="AdjustShippingTag" Type="float" />
+    <Property Name="Adjustpaint" Type="float" />
+    <Property Name="Adjustdocumentation" Type="float" />
+    <Property Name="Adjustassembly" Type="float" />
+    <Property Name="AdjustControlsEngineering" Type="float" />
+    <Property Name="AdjustProgramming" Type="float" />
+    <Property Name="AdjustIM_Machining_Man" Type="float" />
+    <Property Name="AdjustIM_Machining_Cnc" Type="float" />
+    <Property Name="AdjustAssemblyHoursNonSAPPiping" Type="float" />
+    <Property Name="AdjustEngineeringHoursNonSAPPiping" Type="float" />
+    <Property Name="AdjustDesignHoursNonSAPPiping" Type="float" />
+    <Property Name="AdjustPaintHoursNonSAPPiping" Type="float" />
+    <Property Name="AdjustWeldingHoursNonSAPPiping" Type="float" />
+    <Property Name="AdjustDescriptionDetails" Type="varchar" MaxLength="500" />
+    <Property Name="NonAdjustDescriptionDetails" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_SETi_SQL.dbo.T_LABOR_DATA_Tmp' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="T_LABOR_DATA_Tmp">
+    <Key>
+      <PropertyRef Name="QN" />
+      <PropertyRef Name="SN" />
+    </Key>
+    <Property Name="QN" Type="int" Nullable="false" />
+    <Property Name="SN" Type="int" Nullable="false" />
+    <Property Name="DTMPQTY" Type="bigint" />
+    <Property Name="DTMEQTY" Type="bigint" />
+    <Property Name="TDRC" Type="bigint" />
+    <Property Name="TDNC" Type="bigint" />
+    <Property Name="LDLQQTY" Type="bigint" />
+    <Property Name="COMPACCPUA" Type="bigint" />
+    <Property Name="COMPACCSPEC" Type="bigint" />
+    <Property Name="COMBREPUA" Type="bigint" />
+    <Property Name="COMBRESPEC" Type="bigint" />
+    <Property Name="COMCLEPUA" Type="bigint" />
+    <Property Name="COMCLESPEC" Type="bigint" />
+    <Property Name="COMFILPUA" Type="bigint" />
+    <Property Name="COMFILSPEC" Type="bigint" />
+    <Property Name="COMFLSWPUA" Type="bigint" />
+    <Property Name="COMFLSWSPEC" Type="bigint" />
+    <Property Name="COMGUAPUA" Type="bigint" />
+    <Property Name="COMGUASPEC" Type="bigint" />
+    <Property Name="COMGPPUA" Type="bigint" />
+    <Property Name="COMGPSPEC" Type="bigint" />
+    <Property Name="COMHEAPUA" Type="bigint" />
+    <Property Name="COMHEASPEC" Type="bigint" />
+    <Property Name="COMAHEPUA" Type="bigint" />
+    <Property Name="COMAHESPEC" Type="bigint" />
+    <Property Name="COMWHEPUA" Type="bigint" />
+    <Property Name="COMWHESPEC" Type="bigint" />
+    <Property Name="COMHOSPUA" Type="bigint" />
+    <Property Name="COMHOSSPEC" Type="bigint" />
+    <Property Name="COMMMPUA" Type="bigint" />
+    <Property Name="COMMMSPEC" Type="bigint" />
+    <Property Name="COMSVPUA" Type="bigint" />
+    <Property Name="COMSVSPEC" Type="bigint" />
+    <Property Name="COMSGPUA" Type="bigint" />
+    <Property Name="COMSGSPEC" Type="bigint" />
+    <Property Name="COMVPPUA" Type="bigint" />
+    <Property Name="COMVPSPEC" Type="bigint" />
+    <Property Name="COMTSPUA" Type="bigint" />
+    <Property Name="COMTSSPEC" Type="bigint" />
+    <Property Name="COMTPUA" Type="bigint" />
+    <Property Name="COMTSPEC" Type="bigint" />
+    <Property Name="MPGCC1" Type="bigint" />
+    <Property Name="MPGCC2" Type="bigint" />
+    <Property Name="MPGCC3" Type="bigint" />
+    <Property Name="MPGCC4" Type="bigint" />
+    <Property Name="MPGHB1" Type="bigint" />
+    <Property Name="MPGHB2" Type="bigint" />
+    <Property Name="MPGHB3" Type="bigint" />
+    <Property Name="MPGHB4" Type="bigint" />
+    <Property Name="MPGHB5" Type="bigint" />
+    <Property Name="MPGVB1" Type="bigint" />
+    <Property Name="MPGVB2" Type="bigint" />
+    <Property Name="MPGVB3" Type="bigint" />
+    <Property Name="MPGVB4" Type="bigint" />
+    <Property Name="MPGVB5" Type="bigint" />
+    <Property Name="MPGVS1" Type="bigint" />
+    <Property Name="MPGVS2" Type="bigint" />
+    <Property Name="MPGVS3" Type="bigint" />
+    <Property Name="MPGVS4" Type="bigint" />
+    <Property Name="MPGVS5" Type="bigint" />
+    <Property Name="ResType" Type="varchar" MaxLength="50" />
+    <Property Name="ElecConnections" Type="int" />
+    <Property Name="SoundTestFlowAndPressure" Type="bit" />
+    <Property Name="SoundTestFlow" Type="bit" />
+    <Property Name="SoundTestDeadhead" Type="bit" />
+    <Property Name="VibrationTestFlowAndPressure" Type="bit" />
+    <Property Name="VibrationTestFlow" Type="bit" />
+    <Property Name="VibrationTestDeadhead" Type="bit" />
+    <Property Name="VibrationNumTestPoints" Type="smallint" />
+    <Property Name="CustomerTitleBlock" Type="bit" />
+    <Property Name="SpecialDimensioning" Type="bit" />
+    <Property Name="ResStyle" Type="smallint" />
+    <Property Name="ComplexSchematic" Type="bit" />
+    <Property Name="LabelType" Type="smallint" />
+    <Property Name="CustomerWitness" Type="smallint" />
+    <Property Name="CableType" Type="smallint" />
+    <Property Name="CableExplosion" Type="bit" />
+    <Property Name="CableQty" Type="smallint" />
+    <Property Name="FittingType" Type="smallint" />
+    <Property Name="Fitting1Qty" Type="smallint" />
+    <Property Name="Fitting2Qty" Type="smallint" />
+    <Property Name="Fitting3Qty" Type="smallint" />
+    <Property Name="Fitting4Qty" Type="smallint" />
+    <Property Name="PanelMtdValvesStd" Type="smallint" />
+    <Property Name="PanelMtdValvesNonStd" Type="smallint" />
+    <Property Name="ElecBoxStd" Type="smallint" />
+    <Property Name="ElecBoxNonStd" Type="smallint" />
+    <Property Name="auto" Type="int" />
+    <Property Name="CreatedBy" Type="nvarchar(max)" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar(max)" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="SubassemblyID" Type="int" />
+    <Property Name="Adjustengineering" Type="float" />
+    <Property Name="Adjustdesign" Type="float" />
+    <Property Name="AdjustWiringDesign" Type="float" />
+    <Property Name="AdjustPickParts" Type="float" />
+    <Property Name="Adjustwiring" Type="float" />
+    <Property Name="Adjustwelding" Type="float" />
+    <Property Name="Adjusttest" Type="float" />
+    <Property Name="AdjustShippingTag" Type="float" />
+    <Property Name="Adjustpaint" Type="float" />
+    <Property Name="Adjustdocumentation" Type="float" />
+    <Property Name="Adjustassembly" Type="float" />
+    <Property Name="AdjustControlsEngineering" Type="float" />
+    <Property Name="AdjustProgramming" Type="float" />
+    <Property Name="AdjustIM_Machining_Man" Type="float" />
+    <Property Name="AdjustIM_Machining_Cnc" Type="float" />
+    <Property Name="AdjustAssemblyHoursNonSAPPiping" Type="float" />
+    <Property Name="AdjustEngineeringHoursNonSAPPiping" Type="float" />
+    <Property Name="AdjustDesignHoursNonSAPPiping" Type="float" />
+    <Property Name="AdjustPaintHoursNonSAPPiping" Type="float" />
+    <Property Name="AdjustWeldingHoursNonSAPPiping" Type="float" />
+    <Property Name="AdjustDescriptionDetails" Type="varchar" MaxLength="500" />
+    <Property Name="NonAdjustDescriptionDetails" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_SETi_SQL.dbo.T_Labor_Tmp' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="T_Labor_Tmp">
+    <Key>
+      <PropertyRef Name="QN" />
+      <PropertyRef Name="SN" />
+    </Key>
+    <Property Name="QN" Type="int" Nullable="false" />
+    <Property Name="SN" Type="int" Nullable="false" />
+    <Property Name="engineering" Type="money" />
+    <Property Name="design" Type="money" />
+    <Property Name="assembly" Type="money" />
+    <Property Name="wiring" Type="money" />
+    <Property Name="welding" Type="money" />
+    <Property Name="test" Type="money" />
+    <Property Name="paint" Type="money" />
+    <Property Name="documentation" Type="money" />
+    <Property Name="labor_total" Type="money" />
+    <Property Name="labor_margin" Type="int" />
+    <Property Name="labor_net_total" Type="money" />
+    <Property Name="auto" Type="int" />
+    <Property Name="WiringDesign" Type="float" />
+    <Property Name="TestHydraulic" Type="float" />
+    <Property Name="TestSound" Type="float" />
+    <Property Name="TestVibration" Type="float" />
+    <Property Name="ShippingTag" Type="float" />
+    <Property Name="PickParts" Type="float" />
+    <Property Name="TotalLaborDollars" Type="float" />
+    <Property Name="TotalLabor" Type="float" />
+    <Property Name="CreatedBy" Type="nvarchar(max)" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar(max)" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="SubassemblyID" Type="int" />
+    <Property Name="ControlsEngineering" Type="float" />
+    <Property Name="Programming" Type="float" />
+    <Property Name="IM_Machining_Man" Type="float" />
+    <Property Name="IM_Machining_CNC" Type="float" />
+  </EntityType>
+  <EntityType Name="T_labor_variables">
+    <Key>
+      <PropertyRef Name="auto" />
+    </Key>
+    <Property Name="auto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Engineering" Type="money" />
+    <Property Name="design" Type="money" />
+    <Property Name="assembly" Type="money" />
+    <Property Name="wiring" Type="money" />
+    <Property Name="welding" Type="money" />
+    <Property Name="test" Type="money" />
+    <Property Name="paint" Type="money" />
+    <Property Name="documentation" Type="money" />
+    <Property Name="WiringDesign" Type="money" />
+    <Property Name="PickParts" Type="money" />
+    <Property Name="ShippingTag" Type="money" />
+  </EntityType>
+  <EntityType Name="T_LaborCostFactors">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Factor" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Value" Type="float" Nullable="false" />
+    <Property Name="Unit" Type="nvarchar(max)" />
+    <Property Name="LaborModule" Type="nvarchar(max)" />
+    <Property Name="Comments" Type="nvarchar(max)" />
+    <Property Name="CreatedBy" Type="nvarchar(max)" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar(max)" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_LaborCostFactors_ShippableAssembly">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ShippableAssemblyId" Type="int" Nullable="false" />
+    <Property Name="LaborCostFactorId" Type="int" Nullable="false" />
+    <Property Name="Value" Type="float" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_SETi_SQL.dbo.T_MaterialCostFactors' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="T_MaterialCostFactors">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="CostFactor" />
+      <PropertyRef Name="Percentage" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CostFactor" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Percentage" Type="float" Nullable="false" />
+    <Property Name="Comments" Type="nvarchar(max)" />
+    <Property Name="CreatedBy" Type="nvarchar(max)" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar(max)" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_MotorHorsePower">
+    <Key>
+      <PropertyRef Name="HorsePpowerID" />
+    </Key>
+    <Property Name="HorsePpowerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Horse Power" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="T_MotorManufacturer">
+    <Key>
+      <PropertyRef Name="MotorManufacturerID" />
+    </Key>
+    <Property Name="MotorManufacturerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Manufacturer Name" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Manufacturer description" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_MotorRPM">
+    <Key>
+      <PropertyRef Name="RPMID" />
+    </Key>
+    <Property Name="RPMID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RPM" Type="nchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_MotorVoltage">
+    <Key>
+      <PropertyRef Name="MotorVoltageID" />
+    </Key>
+    <Property Name="MotorVoltageID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Voltage" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_Piping_Clamp">
+    <Key>
+      <PropertyRef Name="Clamp_ID" />
+    </Key>
+    <Property Name="Clamp_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Size_Min" Type="float" />
+    <Property Name="Size_Max" Type="float" />
+    <Property Name="Assembly_hrs" Type="float" />
+    <Property Name="flgStatus" Type="bit" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_Piping_Fitting">
+    <Key>
+      <PropertyRef Name="PipeFitting_ID" />
+    </Key>
+    <Property Name="PipeFitting_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Size_Min" Type="float" />
+    <Property Name="Size_Max" Type="float" />
+    <Property Name="Assembly_hrs" Type="float" />
+    <Property Name="flgStatus" Type="bit" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_Piping_Flang">
+    <Key>
+      <PropertyRef Name="PipeFlang_ID" />
+    </Key>
+    <Property Name="PipeFlang_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Size_Min" Type="float" />
+    <Property Name="Size_Max" Type="float" />
+    <Property Name="Assembly_hrs" Type="float" />
+    <Property Name="flgStatus" Type="bit" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_Piping_Hour_Details">
+    <Key>
+      <PropertyRef Name="Piping_hrs_ID" />
+    </Key>
+    <Property Name="Piping_hrs_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Hour_Type" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="Hour_Title" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="Hour_Description" Type="nvarchar" MaxLength="500" />
+    <Property Name="Hour_Value" Type="float" />
+    <Property Name="flgStatus" Type="bit" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_Piping_Kick">
+    <Key>
+      <PropertyRef Name="kick_ID" />
+    </Key>
+    <Property Name="kick_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Conduit" Type="nvarchar" MaxLength="300" />
+    <Property Name="Size_Min" Type="float" />
+    <Property Name="Size_Max" Type="float" />
+    <Property Name="Assembly_hrs" Type="float" />
+    <Property Name="flgStatus" Type="bit" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_Piping_NPT_PipeConn">
+    <Key>
+      <PropertyRef Name="NPT_PipeConn_ID" />
+    </Key>
+    <Property Name="NPT_PipeConn_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Size_Min" Type="float" />
+    <Property Name="Size_Max" Type="float" />
+    <Property Name="Assembly_hrs" Type="float" />
+    <Property Name="flgStatus" Type="bit" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_SETi_SQL.dbo.T_Piping_PaintDetail' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="T_Piping_PaintDetail">
+    <Key>
+      <PropertyRef Name="PaintID" />
+    </Key>
+    <Property Name="PaintID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Paint_Type" Type="nvarchar" MaxLength="250" />
+    <Property Name="Paint_Description" Type="nvarchar" MaxLength="250" />
+    <Property Name="value" Type="float" />
+    <Property Name="metal_type" Type="nvarchar" MaxLength="250" />
+    <Property Name="flgStatus" Type="bit" />
+  </EntityType>
+  <EntityType Name="T_Piping_PipeConnect">
+    <Key>
+      <PropertyRef Name="PipeConnect_ID" />
+    </Key>
+    <Property Name="PipeConnect_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Material" Type="nvarchar" MaxLength="300" />
+    <Property Name="Joint" Type="nvarchar" MaxLength="300" />
+    <Property Name="Schedule" Type="nvarchar" MaxLength="300" />
+    <Property Name="Size" Type="float" />
+    <Property Name="Assembly_hrs" Type="float" />
+    <Property Name="Welding_hrs" Type="float" />
+    <Property Name="flgStatus" Type="bit" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_Piping_ThrededFitting">
+    <Key>
+      <PropertyRef Name="PipeTFitting_ID" />
+    </Key>
+    <Property Name="PipeTFitting_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Size_Min" Type="float" />
+    <Property Name="Size_Max" Type="float" />
+    <Property Name="Assembly_hrs" Type="float" />
+    <Property Name="flgStatus" Type="bit" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_Piping_TubeConnect">
+    <Key>
+      <PropertyRef Name="TubeConnect_ID" />
+    </Key>
+    <Property Name="TubeConnect_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Joint" Type="nvarchar" MaxLength="300" />
+    <Property Name="Size_Min" Type="float" />
+    <Property Name="Size_Max" Type="float" />
+    <Property Name="Assembly_hrs" Type="float" />
+    <Property Name="flgStatus" Type="bit" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_PipingComponent_Values">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Component_ID" Type="int" />
+    <Property Name="Name" Type="nvarchar" MaxLength="300" />
+    <Property Name="Qty" Type="int" />
+    <Property Name="flgActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="T_PipingComponents">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Component_Name" Type="nvarchar" MaxLength="300" />
+    <Property Name="flgActive" Type="bit" />
+    <Property Name="Url" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="T_PipingLabor_Data">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="QN" Type="int" />
+    <Property Name="SN" Type="int" />
+    <Property Name="subassemblyid" Type="int" />
+    <Property Name="Conduit" Type="nvarchar" MaxLength="250" />
+    <Property Name="Unit" Type="nvarchar" MaxLength="250" />
+    <Property Name="Material" Type="nvarchar" MaxLength="250" />
+    <Property Name="Joint" Type="nvarchar" MaxLength="250" />
+    <Property Name="Paint_Details" Type="nvarchar" MaxLength="250" />
+    <Property Name="Method" Type="nvarchar" MaxLength="250" />
+    <Property Name="component" Type="nvarchar" MaxLength="250" />
+    <Property Name="size" Type="nvarchar" MaxLength="250" />
+    <Property Name="schedule" Type="nvarchar" MaxLength="250" />
+    <Property Name="Type" Type="nvarchar" MaxLength="250" />
+    <Property Name="PackageQty" Type="int" />
+    <Property Name="PartQty" Type="int" />
+    <Property Name="PN" Type="nvarchar" MaxLength="250" />
+    <Property Name="Description" Type="nvarchar" MaxLength="250" />
+    <Property Name="Cost" Type="money" />
+    <Property Name="TotalCost" Type="money" />
+    <Property Name="PipingPackageID" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_SETi_SQL.dbo.T_PipingLabor_Data_Tmp' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="T_PipingLabor_Data_Tmp">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="QN" Type="int" />
+    <Property Name="SN" Type="int" />
+    <Property Name="subassemblyid" Type="int" />
+    <Property Name="Conduit" Type="nvarchar" MaxLength="250" />
+    <Property Name="Unit" Type="nvarchar" MaxLength="250" />
+    <Property Name="Material" Type="nvarchar" MaxLength="250" />
+    <Property Name="Joint" Type="nvarchar" MaxLength="250" />
+    <Property Name="Paint_Details" Type="nvarchar" MaxLength="250" />
+    <Property Name="Method" Type="nvarchar" MaxLength="250" />
+    <Property Name="component" Type="nvarchar" MaxLength="250" />
+    <Property Name="size" Type="nvarchar" MaxLength="250" />
+    <Property Name="schedule" Type="nvarchar" MaxLength="250" />
+    <Property Name="Type" Type="nvarchar" MaxLength="250" />
+    <Property Name="PackageQty" Type="int" />
+    <Property Name="PartQty" Type="int" />
+    <Property Name="PN" Type="nvarchar" MaxLength="250" />
+    <Property Name="Description" Type="nvarchar" MaxLength="250" />
+    <Property Name="Cost" Type="money" />
+    <Property Name="TotalCost" Type="money" />
+    <Property Name="PipingPackageID" Type="int" />
+  </EntityType>
+  <EntityType Name="T_PipingLaborConfiguration">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Conduit" Type="nvarchar" MaxLength="250" />
+    <Property Name="Component" Type="nvarchar" MaxLength="250" />
+    <Property Name="Type" Type="nvarchar" MaxLength="250" />
+    <Property Name="Material" Type="nvarchar" MaxLength="250" />
+    <Property Name="Joint" Type="nvarchar" MaxLength="250" />
+    <Property Name="Schedule" Type="nvarchar" MaxLength="250" />
+    <Property Name="MinSize" Type="float" Nullable="false" />
+    <Property Name="MaxSize" Type="float" Nullable="false" />
+    <Property Name="AssemblyLaborHours" Type="float" Nullable="false" />
+    <Property Name="WeldingLaborHours" Type="float" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="250" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="250" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_PipingLaborForCSSS">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Schedule" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="MinSize" Type="float" Nullable="false" />
+    <Property Name="MaxSize" Type="float" Nullable="false" />
+    <Property Name="AssemblyHours" Type="float" Nullable="false" />
+    <Property Name="WeldingHours" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_PipingLaborPaintRequirement">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PaintRequirement" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Conduit" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="PaintLaborHours" Type="float" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="250" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="T_PipingMaterial">
+    <Key>
+      <PropertyRef Name="PipingMaterialID" />
+    </Key>
+    <Property Name="PipingMaterialID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PipingMaterial" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_PipingSchedule">
+    <Key>
+      <PropertyRef Name="PipingScheduleID" />
+    </Key>
+    <Property Name="PipingScheduleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Piping Schedule" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_PipingSchemMapping">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Piping_Id" Type="int" Nullable="false" />
+    <Property Name="Units" Type="nvarchar" MaxLength="50" />
+    <Property Name="Material" Type="nvarchar" MaxLength="50" />
+    <Property Name="Joint" Type="nvarchar" MaxLength="50" />
+    <Property Name="Size" Type="nvarchar" MaxLength="50" />
+    <Property Name="Schedule" Type="nvarchar" MaxLength="50" />
+    <Property Name="Schem_Symbol" Type="nvarchar" MaxLength="250" />
+    <Property Name="Schem_Component" Type="nvarchar" MaxLength="250" />
+    <Property Name="IsSelected" Type="bit" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="Conduit" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="T_PipingSize">
+    <Key>
+      <PropertyRef Name="PipingSizeID" />
+    </Key>
+    <Property Name="PipingSizeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Piping Size" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_SETi_SQL.dbo.T_PipingType' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="T_PipingType">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Piping Type" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Piping Type" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_Product">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductName" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_qts_All_SAP_Motors">
+    <Key>
+      <PropertyRef Name="MotorId" />
+    </Key>
+    <Property Name="PN" Type="nvarchar" MaxLength="255" />
+    <Property Name="MaterialNumber" Type="nvarchar" MaxLength="255" />
+    <Property Name="StandardPrice" Type="nvarchar" MaxLength="255" />
+    <Property Name="MG2" Type="nvarchar" MaxLength="255" />
+    <Property Name="ClassCode" Type="nvarchar" MaxLength="255" />
+    <Property Name="QuoteDescription" Type="nvarchar" MaxLength="255" />
+    <Property Name="Info1" Type="nvarchar" MaxLength="255" />
+    <Property Name="Info2" Type="nvarchar" MaxLength="255" />
+    <Property Name="Info3" Type="nvarchar" MaxLength="255" />
+    <Property Name="Info4" Type="nvarchar" MaxLength="255" />
+    <Property Name="Info5" Type="nvarchar" MaxLength="255" />
+    <Property Name="Info6" Type="nvarchar" MaxLength="255" />
+    <Property Name="Info7" Type="nvarchar" MaxLength="255" />
+    <Property Name="Info8" Type="nvarchar" MaxLength="255" />
+    <Property Name="Info9" Type="nvarchar" MaxLength="255" />
+    <Property Name="Info10" Type="nvarchar" MaxLength="255" />
+    <Property Name="MotorId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'DB_SETi_SQL.dbo.T_qts_labor_variables' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="T_qts_labor_variables">
+          <Property Name="Engineering" Type="varchar" MaxLength="50" />
+          <Property Name="design" Type="varchar" MaxLength="50" />
+          <Property Name="assembly" Type="varchar" MaxLength="50" />
+          <Property Name="wiring" Type="varchar" MaxLength="50" />
+          <Property Name="welding" Type="varchar" MaxLength="50" />
+          <Property Name="test" Type="varchar" MaxLength="50" />
+          <Property Name="paint" Type="varchar" MaxLength="50" />
+          <Property Name="documentation" Type="varchar" MaxLength="50" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'DB_SETi_SQL.dbo.T_qts_tblAccumulators' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="T_qts_tblAccumulators">
+          <Property Name="PN" Type="nvarchar" MaxLength="255" />
+          <Property Name="MaterialNumber" Type="nvarchar" MaxLength="255" />
+          <Property Name="QuoteDescription" Type="nvarchar" MaxLength="255" />
+          <Property Name="StandardPrice" Type="float" />
+          <Property Name="MG2" Type="nvarchar" MaxLength="255" />
+          <Property Name="Class" Type="nvarchar" MaxLength="255" />
+          <Property Name="info1" Type="nvarchar" MaxLength="255" />
+          <Property Name="info2" Type="nvarchar" MaxLength="255" />
+          <Property Name="info3" Type="nvarchar" MaxLength="255" />
+          <Property Name="info4" Type="nvarchar" MaxLength="255" />
+          <Property Name="info5" Type="nvarchar" MaxLength="255" />
+          <Property Name="info6" Type="nvarchar" MaxLength="255" />
+          <Property Name="info7" Type="nvarchar" MaxLength="255" />
+          <Property Name="info8" Type="nvarchar" MaxLength="255" />
+          <Property Name="info9" Type="nvarchar" MaxLength="255" />
+          <Property Name="info10" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'DB_SETi_SQL.dbo.T_qts_tblFilters' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="T_qts_tblFilters">
+          <Property Name="PN" Type="nvarchar" MaxLength="255" />
+          <Property Name="MaterialNumber" Type="nvarchar" MaxLength="255" />
+          <Property Name="StandardPrice" Type="float" />
+          <Property Name="MG2" Type="nvarchar" MaxLength="255" />
+          <Property Name="ClassCode" Type="nvarchar" MaxLength="255" />
+          <Property Name="QuoteDescription" Type="nvarchar" MaxLength="255" />
+          <Property Name="INFO1" Type="nvarchar" MaxLength="255" />
+          <Property Name="INFO2" Type="smallint" />
+          <Property Name="INFO3" Type="nvarchar" MaxLength="255" />
+          <Property Name="INFO4" Type="smallint" />
+          <Property Name="INFO5" Type="smallint" />
+          <Property Name="INFO6" Type="nvarchar" MaxLength="255" />
+          <Property Name="INFO7" Type="nvarchar" MaxLength="255" />
+          <Property Name="INFO8" Type="nvarchar" MaxLength="50" />
+          <Property Name="INFO9" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'DB_SETi_SQL.dbo.T_qts_tblFlanges' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="T_qts_tblFlanges">
+          <Property Name="PN" Type="nvarchar" MaxLength="255" />
+          <Property Name="MaterialNumber" Type="nvarchar" MaxLength="255" />
+          <Property Name="QuoteDescription" Type="nvarchar" MaxLength="255" />
+          <Property Name="StandardPrice" Type="float" />
+          <Property Name="MG2" Type="nvarchar" MaxLength="255" />
+          <Property Name="Class" Type="nvarchar" MaxLength="255" />
+          <Property Name="INFO1" Type="nvarchar" MaxLength="255" />
+          <Property Name="INFO2" Type="nvarchar" MaxLength="255" />
+          <Property Name="INFO3" Type="nvarchar" MaxLength="255" />
+          <Property Name="INFO4" Type="nvarchar" MaxLength="255" />
+          <Property Name="INFO5" Type="nvarchar" MaxLength="255" />
+          <Property Name="INFO6" Type="nvarchar" MaxLength="255" />
+          <Property Name="INFO7" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_SETi_SQL.dbo.T_qts_tblPUAdescr' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="T_qts_tblPUAdescr">
+    <Key>
+      <PropertyRef Name="Auto" />
+    </Key>
+    <Property Name="SHEET NO" Type="nvarchar" MaxLength="255" />
+    <Property Name="DESCRIPTION" Type="nvarchar" MaxLength="255" />
+    <Property Name="SECT" Type="nvarchar" MaxLength="255" />
+    <Property Name="FILENAME" Type="nvarchar" MaxLength="255" />
+    <Property Name="Field5" Type="nvarchar" MaxLength="255" />
+    <Property Name="Auto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_Quote_Details">
+    <Key>
+      <PropertyRef Name="Quote_UserId" />
+    </Key>
+    <Property Name="Quote_UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Quote_auto" Type="int" Nullable="false" />
+    <Property Name="Application_Engineer" Type="int" />
+    <Property Name="Sale_Engineer" Type="int" />
+    <Property Name="Distribution_Channel" Type="int" />
+    <Property Name="Type" Type="int" />
+    <Property Name="Cost_Approver" Type="int" />
+    <Property Name="CA_Action_Date" Type="datetime2" Precision="7" />
+    <Property Name="CA_Comment" Type="nvarchar" MaxLength="500" />
+    <Property Name="Sell_Price_Approver" Type="int" />
+    <Property Name="SPA_Action_Date" Type="datetime2" Precision="7" />
+    <Property Name="SPA_Comment" Type="nvarchar" MaxLength="500" />
+    <Property Name="Additional_SP_Approver" Type="int" />
+    <Property Name="ASPA_Action_Date" Type="datetime2" Precision="7" />
+    <Property Name="ASPA_Comment" Type="nvarchar" MaxLength="500" />
+    <Property Name="Approval_Levels" Type="smallint" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="CreatedDate" Type="datetime2" Precision="7" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ModifiedDate" Type="datetime2" Precision="7" />
+    <Property Name="StatusId" Type="int" />
+    <Property Name="IsPMEffort" Type="char" MaxLength="1" />
+    <Property Name="PMEffort" Type="money" />
+    <Property Name="IsCommission" Type="char" MaxLength="1" />
+    <Property Name="Commission" Type="money" />
+    <Property Name="PreviousStatusId" Type="int" />
+  </EntityType>
+  <EntityType Name="T_Quote_Parts">
+    <Key>
+      <PropertyRef Name="auto" />
+    </Key>
+    <Property Name="sub" Type="varchar" MaxLength="10" />
+    <Property Name="SN" Type="int" />
+    <Property Name="LI" Type="int" />
+    <Property Name="qty" Type="int" />
+    <Property Name="PN" Type="varchar" MaxLength="30" />
+    <Property Name="TP" Type="varchar" MaxLength="10" />
+    <Property Name="descr" Type="varchar(max)" />
+    <Property Name="net_cost" Type="money" />
+    <Property Name="cost" Type="money" />
+    <Property Name="part_markup" Type="float" />
+    <Property Name="revision" Type="varchar" MaxLength="25" />
+    <Property Name="auto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="QN" Type="int" Nullable="false" />
+    <Property Name="PipingWelding" Type="float" />
+    <Property Name="PipingAssembly" Type="float" />
+    <Property Name="materialoverhead" Type="money" />
+    <Property Name="plantadministration" Type="money" />
+    <Property Name="manufacturingcost" Type="money" />
+    <Property Name="sga" Type="money" />
+    <Property Name="riskfactor" Type="money" />
+    <Property Name="sellprice" Type="money" />
+    <Property Name="CopyFrom" Type="bigint" />
+    <Property Name="UserDesc" Type="nvarchar(max)" />
+    <Property Name="ShippableAssemblyId" Type="int" />
+    <Property Name="SubOrder" Type="int" />
+    <Property Name="IsCostChanged" Type="bit" Nullable="false" />
+    <Property Name="InternalNote" Type="nvarchar(max)" />
+    <Property Name="IsCostIncrease" Type="bit" />
+    <Property Name="SAPCost" Type="float" />
+    <Property Name="SAPNetCost" Type="float" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_SETi_SQL.dbo.T_Quote_Parts_Tmp' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="T_Quote_Parts_Tmp">
+    <Key>
+      <PropertyRef Name="QN" />
+      <PropertyRef Name="IsCostChanged" />
+    </Key>
+    <Property Name="sub" Type="varchar" MaxLength="10" />
+    <Property Name="SN" Type="int" />
+    <Property Name="LI" Type="int" />
+    <Property Name="qty" Type="int" />
+    <Property Name="PN" Type="varchar" MaxLength="30" />
+    <Property Name="TP" Type="varchar" MaxLength="10" />
+    <Property Name="descr" Type="varchar(max)" />
+    <Property Name="net_cost" Type="money" />
+    <Property Name="cost" Type="money" />
+    <Property Name="part_markup" Type="float" />
+    <Property Name="revision" Type="varchar" MaxLength="25" />
+    <Property Name="auto" Type="int" />
+    <Property Name="QN" Type="int" Nullable="false" />
+    <Property Name="PipingWelding" Type="float" />
+    <Property Name="PipingAssembly" Type="float" />
+    <Property Name="materialoverhead" Type="money" />
+    <Property Name="plantadministration" Type="money" />
+    <Property Name="manufacturingcost" Type="money" />
+    <Property Name="sga" Type="money" />
+    <Property Name="riskfactor" Type="money" />
+    <Property Name="sellprice" Type="money" />
+    <Property Name="CopyFrom" Type="bigint" />
+    <Property Name="UserDesc" Type="nvarchar(max)" />
+    <Property Name="ShippableAssemblyId" Type="int" />
+    <Property Name="SubOrder" Type="int" />
+    <Property Name="IsCostChanged" Type="bit" Nullable="false" />
+    <Property Name="InternalNote" Type="nvarchar(max)" />
+    <Property Name="IsCostIncrease" Type="bit" />
+    <Property Name="SAPCost" Type="float" />
+    <Property Name="SAPNetCost" Type="float" />
+  </EntityType>
+  <EntityType Name="T_Quote_Sections">
+    <Key>
+      <PropertyRef Name="auto" />
+    </Key>
+    <Property Name="QN" Type="int" Nullable="false" />
+    <Property Name="section" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="SN" Type="int" />
+    <Property Name="descr" Type="varchar(max)" />
+    <Property Name="section_markup" Type="float" />
+    <Property Name="part_number" Type="varchar" MaxLength="25" />
+    <Property Name="sap_descr" Type="varchar" MaxLength="100" />
+    <Property Name="revision" Type="varchar" MaxLength="25" />
+    <Property Name="section_cost" Type="float" />
+    <Property Name="sect_net_cost" Type="float" />
+    <Property Name="qty" Type="int" />
+    <Property Name="DefaultPartMargin" Type="float" />
+    <Property Name="plantadministration" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="manufacturingcost" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="sga" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="riskfactor" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="sellprice" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="labor_tot" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="commission" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="materialoverhead" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="CreatedDate" Type="datetime2" Precision="7" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ModifiedDate" Type="datetime2" Precision="7" />
+    <Property Name="auto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SectionOrder" Type="int" />
+    <Property Name="RiskFactorPercentage" Type="float" />
+    <Property Name="SGAPercentage" Type="float" />
+  </EntityType>
+  <EntityType Name="T_Quote_Sections_old">
+    <Key>
+      <PropertyRef Name="auto" />
+    </Key>
+    <Property Name="QN" Type="int" Nullable="false" />
+    <Property Name="section" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="SN" Type="int" />
+    <Property Name="descr" Type="varchar" MaxLength="100" />
+    <Property Name="section_markup" Type="float" />
+    <Property Name="part_number" Type="varchar" MaxLength="25" />
+    <Property Name="sap_descr" Type="varchar" MaxLength="100" />
+    <Property Name="revision" Type="varchar" MaxLength="25" />
+    <Property Name="section_cost" Type="float" />
+    <Property Name="sect_net_cost" Type="float" />
+    <Property Name="qty" Type="int" />
+    <Property Name="DefaultPartMargin" Type="float" />
+    <Property Name="plantadministration" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="manufacturingcost" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="sga" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="riskfactor" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="sellprice" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="labor_tot" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="commission" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="materialoverhead" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="CreatedDate" Type="datetime2" Precision="7" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ModifiedDate" Type="datetime2" Precision="7" />
+    <Property Name="auto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_SETi_SQL.dbo.T_Quote_Sections_Tmp' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="T_Quote_Sections_Tmp">
+    <Key>
+      <PropertyRef Name="QN" />
+      <PropertyRef Name="section" />
+      <PropertyRef Name="auto" />
+    </Key>
+    <Property Name="QN" Type="int" Nullable="false" />
+    <Property Name="section" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="SN" Type="int" />
+    <Property Name="descr" Type="varchar(max)" />
+    <Property Name="section_markup" Type="float" />
+    <Property Name="part_number" Type="varchar" MaxLength="25" />
+    <Property Name="sap_descr" Type="varchar" MaxLength="100" />
+    <Property Name="revision" Type="varchar" MaxLength="25" />
+    <Property Name="section_cost" Type="float" />
+    <Property Name="sect_net_cost" Type="float" />
+    <Property Name="qty" Type="int" />
+    <Property Name="DefaultPartMargin" Type="float" />
+    <Property Name="plantadministration" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="manufacturingcost" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="sga" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="riskfactor" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="sellprice" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="labor_tot" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="commission" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="materialoverhead" Type="decimal" Precision="19" Scale="4" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="CreatedDate" Type="datetime2" Precision="7" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ModifiedDate" Type="datetime2" Precision="7" />
+    <Property Name="auto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SectionOrder" Type="int" />
+    <Property Name="RiskFactorPercentage" Type="float" />
+    <Property Name="SGAPercentage" Type="float" />
+  </EntityType>
+  <EntityType Name="T_Quote_Sub">
+    <Key>
+      <PropertyRef Name="auto" />
+    </Key>
+    <Property Name="SN" Type="int" />
+    <Property Name="LI" Type="int" />
+    <Property Name="qty" Type="int" />
+    <Property Name="pn" Type="varchar" MaxLength="30" />
+    <Property Name="tp" Type="varchar" MaxLength="10" />
+    <Property Name="descr" Type="varchar" MaxLength="100" />
+    <Property Name="net_cost" Type="money" />
+    <Property Name="cost" Type="money" />
+    <Property Name="part_markup" Type="float" />
+    <Property Name="revision" Type="varchar" MaxLength="25" />
+    <Property Name="auto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="sub_descr" Type="varchar" MaxLength="100" />
+    <Property Name="QN" Type="int" Nullable="false" />
+    <Property Name="PipingWelding" Type="float" />
+    <Property Name="PipingAssembly" Type="float" />
+    <Property Name="UserDesc" Type="nvarchar(max)" />
+    <Property Name="ParentId" Type="int" />
+    <Property Name="IsCostChanged" Type="bit" Nullable="false" />
+    <Property Name="InternalNote" Type="nvarchar(max)" />
+    <Property Name="IsCostIncrease" Type="bit" />
+    <Property Name="SAPCost" Type="float" />
+    <Property Name="SAPNetCost" Type="float" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_SETi_SQL.dbo.T_Quote_Sub_Tmp' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="T_Quote_Sub_Tmp">
+    <Key>
+      <PropertyRef Name="QN" />
+      <PropertyRef Name="IsCostChanged" />
+    </Key>
+    <Property Name="SN" Type="int" />
+    <Property Name="LI" Type="int" />
+    <Property Name="qty" Type="int" />
+    <Property Name="pn" Type="varchar" MaxLength="30" />
+    <Property Name="tp" Type="varchar" MaxLength="10" />
+    <Property Name="descr" Type="varchar" MaxLength="100" />
+    <Property Name="net_cost" Type="money" />
+    <Property Name="cost" Type="money" />
+    <Property Name="part_markup" Type="float" />
+    <Property Name="revision" Type="varchar" MaxLength="25" />
+    <Property Name="auto" Type="int" />
+    <Property Name="sub_descr" Type="varchar" MaxLength="100" />
+    <Property Name="QN" Type="int" Nullable="false" />
+    <Property Name="PipingWelding" Type="float" />
+    <Property Name="PipingAssembly" Type="float" />
+    <Property Name="UserDesc" Type="nvarchar(max)" />
+    <Property Name="ParentId" Type="int" />
+    <Property Name="IsCostChanged" Type="bit" Nullable="false" />
+    <Property Name="InternalNote" Type="nvarchar(max)" />
+    <Property Name="IsCostIncrease" Type="bit" />
+    <Property Name="SAPCost" Type="float" />
+    <Property Name="SAPNetCost" Type="float" />
+  </EntityType>
+  <EntityType Name="T_Quotes">
+    <Key>
+      <PropertyRef Name="auto" />
+    </Key>
+    <Property Name="auto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Quote_number" Type="varchar" MaxLength="50" />
+    <Property Name="Quote_Revision" Type="smallint" Nullable="false" />
+    <Property Name="quote_expectedorder_date" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="quote_rec_date" Type="datetime2" Precision="7" />
+    <Property Name="quote_due_date" Type="datetime2" Precision="7" />
+    <Property Name="quote_issued_date" Type="datetime2" Precision="7" />
+    <Property Name="sales_office" Type="int" />
+    <Property Name="sales_group" Type="int" />
+    <Property Name="DistributorId" Type="int" />
+    <Property Name="cust_sap_number" Type="nvarchar" MaxLength="100" />
+    <Property Name="contact_salutation" Type="nvarchar" MaxLength="10" />
+    <Property Name="contact_fname" Type="nvarchar" MaxLength="100" />
+    <Property Name="contact_lname" Type="nvarchar" MaxLength="100" />
+    <Property Name="contact_telbus" Type="nvarchar" MaxLength="100" />
+    <Property Name="contact_telmobile" Type="nvarchar" MaxLength="100" />
+    <Property Name="contact_telfax" Type="nvarchar" MaxLength="100" />
+    <Property Name="contact_email" Type="nvarchar" MaxLength="100" />
+    <Property Name="description" Type="nvarchar" MaxLength="500" />
+    <Property Name="est_price" Type="float" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="CreatedDate" Type="datetime2" Precision="7" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ModifiedDate" Type="datetime2" Precision="7" />
+    <Property Name="LineItemIncrement" Type="int" />
+    <Property Name="TechPositionIncrement" Type="int" />
+    <Property Name="Reason" Type="nvarchar" MaxLength="100" />
+    <Property Name="ReasonDetails" Type="nvarchar" MaxLength="500" />
+    <Property Name="OrderStatus" Type="nvarchar" MaxLength="100" />
+    <Property Name="SalesOrderNumber" Type="int" />
+    <Property Name="CustomerType" Type="int" Nullable="false" />
+    <Property Name="flgCustomBillCust" Type="int" Nullable="false" />
+    <Property Name="flgCustomOEMUser" Type="int" Nullable="false" />
+    <Property Name="ProbabilityPO" Type="int" Nullable="false" />
+    <Property Name="ProbabilityEOD" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_Quotes_old">
+    <Key>
+      <PropertyRef Name="auto" />
+    </Key>
+    <Property Name="auto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Quote_number" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="quoter" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="quote_started_date" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="quote_rec_date" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="quote_due_date" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="quote_issued_date" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="sales_office" Type="int" />
+    <Property Name="sales_group" Type="int" />
+    <Property Name="cust_name" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="cust_street" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="cust_city" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="cust_zip" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="cust_state" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="cust_country" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="cust_sap_number" Type="nvarchar" MaxLength="100" />
+    <Property Name="contact_salutation" Type="nvarchar" MaxLength="10" />
+    <Property Name="contact_fname" Type="nvarchar" MaxLength="100" />
+    <Property Name="contact_lname" Type="nvarchar" MaxLength="100" />
+    <Property Name="contact_telbus" Type="nvarchar" MaxLength="100" />
+    <Property Name="contact_telmobile" Type="nvarchar" MaxLength="100" />
+    <Property Name="contact_telfax" Type="nvarchar" MaxLength="100" />
+    <Property Name="contact_email" Type="nvarchar" MaxLength="100" />
+    <Property Name="description" Type="nvarchar" MaxLength="500" />
+    <Property Name="est_price" Type="float" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="CreatedDate" Type="datetime2" Precision="7" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ModifiedDate" Type="datetime2" Precision="7" />
+    <Property Name="LineItemIncrement" Type="int" />
+    <Property Name="TechPositionIncrement" Type="int" />
+    <Property Name="Approver" Type="nvarchar" MaxLength="100" />
+    <Property Name="Status" Type="nvarchar" MaxLength="20" />
+    <Property Name="ApproverComments" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'DB_SETi_SQL.dbo.T_reservoir' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="T_reservoir">
+          <Property Name="Col001" Type="varchar" MaxLength="255" />
+          <Property Name="PN" Type="varchar" MaxLength="255" />
+          <Property Name="descr" Type="varchar" MaxLength="255" />
+          <Property Name="ClCode" Type="varchar" MaxLength="255" />
+          <Property Name="gallons" Type="varchar" MaxLength="255" />
+          <Property Name="ResType" Type="varchar" MaxLength="255" />
+          <Property Name="Matl" Type="varchar" MaxLength="255" />
+          <Property Name="QuoteDesc" Type="varchar" MaxLength="255" />
+          <Property Name="Pump" Type="varchar" MaxLength="255" />
+          <Property Name="MtrHp" Type="varchar" MaxLength="255" />
+          <Property Name="Manifold" Type="varchar" MaxLength="255" />
+          <Property Name="BFrame" Type="varchar" MaxLength="255" />
+          <Property Name="DripTray" Type="varchar" MaxLength="255" />
+          <Property Name="Weight" Type="varchar" MaxLength="255" />
+          <Property Name="ResWgt" Type="varchar" MaxLength="255" />
+          <Property Name="Col016" Type="varchar" MaxLength="255" />
+          <Property Name="Col017" Type="varchar" MaxLength="255" />
+        </EntityType>-->
+  <EntityType Name="T_ResInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ResType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PartsListTime" Type="int" />
+    <Property Name="PickPartsTime" Type="float" />
+    <Property Name="WiringBasicTime" Type="int" />
+    <Property Name="BasicAssemblyTime" Type="float" />
+    <Property Name="DesignHours" Type="float" />
+    <Property Name="AssemblyDrawingMinutes" Type="int" />
+    <Property Name="SchematicReview" Type="int" />
+    <Property Name="ComponentAssemblyMultiplier" Type="int" />
+    <Property Name="BasicPaintTime" Type="float" />
+    <Property Name="ReservoirCapacityInGallons" Type="int" />
+  </EntityType>
+  <EntityType Name="T_Roles">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="RoleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Role" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RoleDescription" Type="nvarchar(max)" />
+    <Property Name="Comments" Type="nvarchar(max)" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_SalesGroup">
+    <Key>
+      <PropertyRef Name="SalesGroupID" />
+    </Key>
+    <Property Name="SalesGroupID" Type="int" Nullable="false" />
+    <Property Name="SalesGroupName" Type="varchar(max)" Nullable="false" />
+    <Property Name="Description" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_SalesOffice">
+    <Key>
+      <PropertyRef Name="SalesOfficeID" />
+    </Key>
+    <Property Name="SalesOfficeID" Type="int" Nullable="false" />
+    <Property Name="SalesOfficeName" Type="varchar(max)" Nullable="false" />
+    <Property Name="Description" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_SETi_SQL.dbo.T_sap_customer' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="T_sap_customer">
+    <Key>
+      <PropertyRef Name="Customer" />
+    </Key>
+    <Property Name="Customer" Type="int" Nullable="false" />
+    <Property Name="Name1" Type="nvarchar" MaxLength="255" />
+    <Property Name="Name2" Type="nvarchar" MaxLength="255" />
+    <Property Name="Street" Type="nvarchar" MaxLength="255" />
+    <Property Name="POBox" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="Rg" Type="nvarchar" MaxLength="255" />
+    <Property Name="PostalCode" Type="nvarchar" MaxLength="255" />
+    <Property Name="Cty" Type="nvarchar" MaxLength="255" />
+    <Property Name="ModifiedBy" Type="nvarchar(max)" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="SalesOfficeId" Type="int" />
+    <Property Name="SalesGroupId" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_SETi_SQL.dbo.T_SAPCustomersImport_Temp' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="T_SAPCustomersImport_Temp">
+    <Key>
+      <PropertyRef Name="CustomerId" />
+    </Key>
+    <Property Name="CustomerId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Customer" Type="nvarchar(max)" />
+    <Property Name="PostalCode" Type="nvarchar(max)" />
+    <Property Name="Region" Type="nvarchar(max)" />
+    <Property Name="City" Type="nvarchar(max)" />
+    <Property Name="Street" Type="nvarchar(max)" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="LastUpdatedBy" Type="nvarchar(max)" />
+    <Property Name="LastUpdatedDate" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DB_SETi_SQL.dbo.T_sapmats' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="T_sapmats">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Material" Type="nvarchar" MaxLength="255" />
+    <Property Name="Material number" Type="nvarchar" MaxLength="255" />
+    <Property Name="PGr" Type="int" />
+    <Property Name="Purchasing group" Type="nvarchar" MaxLength="255" />
+    <Property Name="MRPCn" Type="int" />
+    <Property Name="MRP controller" Type="nvarchar" MaxLength="255" />
+    <Property Name="MS" Type="nvarchar" MaxLength="255" />
+    <Property Name="Plant-Specific Material Status" Type="nvarchar" MaxLength="255" />
+    <Property Name="Product hierarchy" Type="int" />
+    <Property Name="Field11" Type="nvarchar" MaxLength="255" />
+    <Property Name="Total stock" Type="float" />
+    <Property Name="BUn" Type="nvarchar" MaxLength="255" />
+    <Property Name="Standard price" Type="money" />
+    <Property Name="Comsumption" Type="float" />
+    <Property Name="MG 2" Type="nvarchar" MaxLength="255" />
+    <Property Name="Material group 2" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="T_ShippableAssembly">
+    <Key>
+      <PropertyRef Name="ShippableAssemblyID" />
+    </Key>
+    <Property Name="ShippableAssemblyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ShippableAssemblyName" Type="varchar(max)" Nullable="false" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="flgActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="T_status">
+    <Key>
+      <PropertyRef Name="StatusId" />
+    </Key>
+    <Property Name="StatusId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StatusName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="StatusDescription" Type="nvarchar(max)" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_UserRoles">
+    <Key>
+      <PropertyRef Name="UserRoleId" />
+    </Key>
+    <Property Name="UserRoleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AppRoleId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Domain" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="NTID" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar(max)" />
+    <Property Name="LastName" Type="nvarchar(max)" />
+    <Property Name="UserName" Type="nvarchar(max)" />
+    <Property Name="Department" Type="nvarchar(max)" />
+    <Property Name="Email" Type="nvarchar(max)" />
+    <Property Name="Phone" Type="nvarchar(max)" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar(max)" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar(max)" />
+    <Property Name="ModifiedDate" Type="datetime" />
+  </EntityType>
+  <Association Name="FK__T_Users__RoleId__382F5661">
+    <End Role="T_Roles" Type="Self.T_Roles" Multiplicity="1" />
+    <End Role="T_Users" Type="Self.T_Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Roles">
+        <PropertyRef Name="RoleId" />
+      </Principal>
+      <Dependent Role="T_Users">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_DocumentLink_T_DocumentLinkCategory">
+    <End Role="T_DocumentLinkCategory" Type="Self.T_DocumentLinkCategory" Multiplicity="1" />
+    <End Role="T_DocumentLink" Type="Self.T_DocumentLink" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_DocumentLinkCategory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="T_DocumentLink">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_Fields_Value_T_Fields">
+    <End Role="T_Fields" Type="Self.T_Fields" Multiplicity="0..1" />
+    <End Role="T_Fields_Value" Type="Self.T_Fields_Value" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Fields">
+        <PropertyRef Name="FieldId" />
+      </Principal>
+      <Dependent Role="T_Fields_Value">
+        <PropertyRef Name="FieldId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_LABOR_DATA_T_QuotesA">
+    <End Role="T_Quotes" Type="Self.T_Quotes" Multiplicity="1" />
+    <End Role="T_LABOR_DATA" Type="Self.T_LABOR_DATA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Quotes">
+        <PropertyRef Name="auto" />
+      </Principal>
+      <Dependent Role="T_LABOR_DATA">
+        <PropertyRef Name="QN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_Labor_T_QuotesA">
+    <End Role="T_Quotes" Type="Self.T_Quotes" Multiplicity="1" />
+    <End Role="T_Labor" Type="Self.T_Labor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Quotes">
+        <PropertyRef Name="auto" />
+      </Principal>
+      <Dependent Role="T_Labor">
+        <PropertyRef Name="QN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_LaborCostFactors_ShippableAssembly_T_ShippableAssemblyB">
+    <End Role="T_ShippableAssembly" Type="Self.T_ShippableAssembly" Multiplicity="1" />
+    <End Role="T_LaborCostFactors_ShippableAssembly" Type="Self.T_LaborCostFactors_ShippableAssembly" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_ShippableAssembly">
+        <PropertyRef Name="ShippableAssemblyID" />
+      </Principal>
+      <Dependent Role="T_LaborCostFactors_ShippableAssembly">
+        <PropertyRef Name="ShippableAssemblyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_Quote_Sections_T_Quote_Sections">
+    <End Role="T_Quotes_old" Type="Self.T_Quotes_old" Multiplicity="1" />
+    <End Role="T_Quote_Sections_old" Type="Self.T_Quote_Sections_old" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Quotes_old">
+        <PropertyRef Name="auto" />
+      </Principal>
+      <Dependent Role="T_Quote_Sections_old">
+        <PropertyRef Name="QN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_Quote_Sections_T_Quote_Sections1">
+    <End Role="T_Quotes" Type="Self.T_Quotes" Multiplicity="1" />
+    <End Role="T_Quote_Sections" Type="Self.T_Quote_Sections" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Quotes">
+        <PropertyRef Name="auto" />
+      </Principal>
+      <Dependent Role="T_Quote_Sections">
+        <PropertyRef Name="QN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_Quote_Sub_T_QuotesA">
+    <End Role="T_Quotes" Type="Self.T_Quotes" Multiplicity="1" />
+    <End Role="T_Quote_Sub" Type="Self.T_Quote_Sub" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Quotes">
+        <PropertyRef Name="auto" />
+      </Principal>
+      <Dependent Role="T_Quote_Sub">
+        <PropertyRef Name="QN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_sap_customer_T_SalesGroup">
+    <End Role="T_SalesGroup" Type="Self.T_SalesGroup" Multiplicity="0..1" />
+    <End Role="T_sap_customer" Type="Self.T_sap_customer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_SalesGroup">
+        <PropertyRef Name="SalesGroupID" />
+      </Principal>
+      <Dependent Role="T_sap_customer">
+        <PropertyRef Name="SalesGroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_sap_customer_T_SalesOffice">
+    <End Role="T_SalesOffice" Type="Self.T_SalesOffice" Multiplicity="0..1" />
+    <End Role="T_sap_customer" Type="Self.T_sap_customer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_SalesOffice">
+        <PropertyRef Name="SalesOfficeID" />
+      </Principal>
+      <Dependent Role="T_sap_customer">
+        <PropertyRef Name="SalesOfficeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_UserRoles_T_AppRole">
+    <End Role="T_AppRole" Type="Self.T_AppRole" Multiplicity="1" />
+    <End Role="T_UserRoles" Type="Self.T_UserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_AppRole">
+        <PropertyRef Name="AppRoleId" />
+      </Principal>
+      <Dependent Role="T_UserRoles">
+        <PropertyRef Name="AppRoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_T_UserRoles_T_Users">
+    <End Role="T_Users" Type="Self.T_Users" Multiplicity="1" />
+    <End Role="T_UserRoles" Type="Self.T_UserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="T_UserRoles">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="QuoteSystemModelStoreContainer">
+    <EntitySet Name="T_Accumulators" EntityType="Self.T_Accumulators" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_ANSIPiping" EntityType="Self.T_ANSIPiping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_AppRole" EntityType="Self.T_AppRole" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_BillToCustomerDetails" EntityType="Self.T_BillToCustomerDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Conduit" EntityType="Self.T_Conduit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Configuration" EntityType="Self.T_Configuration" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_DocumentLink" EntityType="Self.T_DocumentLink" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_DocumentLinkCategory" EntityType="Self.T_DocumentLinkCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Fields" EntityType="Self.T_Fields" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Fields_Value" EntityType="Self.T_Fields_Value" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Flange type" EntityType="Self.T_Flange type" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_FlangePad" EntityType="Self.T_FlangePad" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_FlangePattern" EntityType="Self.T_FlangePattern" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Flanges" EntityType="Self.T_Flanges" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Labor" EntityType="Self.T_Labor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_LABOR_DATA" EntityType="Self.T_LABOR_DATA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_labor_variables" EntityType="Self.T_labor_variables" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_LaborCostFactors" EntityType="Self.T_LaborCostFactors" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_LaborCostFactors_ShippableAssembly" EntityType="Self.T_LaborCostFactors_ShippableAssembly" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_MotorHorsePower" EntityType="Self.T_MotorHorsePower" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_MotorManufacturer" EntityType="Self.T_MotorManufacturer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_MotorRPM" EntityType="Self.T_MotorRPM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_MotorVoltage" EntityType="Self.T_MotorVoltage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Piping_Clamp" EntityType="Self.T_Piping_Clamp" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Piping_Fitting" EntityType="Self.T_Piping_Fitting" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Piping_Flang" EntityType="Self.T_Piping_Flang" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Piping_Hour_Details" EntityType="Self.T_Piping_Hour_Details" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Piping_Kick" EntityType="Self.T_Piping_Kick" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Piping_NPT_PipeConn" EntityType="Self.T_Piping_NPT_PipeConn" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Piping_PipeConnect" EntityType="Self.T_Piping_PipeConnect" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Piping_ThrededFitting" EntityType="Self.T_Piping_ThrededFitting" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Piping_TubeConnect" EntityType="Self.T_Piping_TubeConnect" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_PipingComponent_Values" EntityType="Self.T_PipingComponent_Values" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_PipingComponents" EntityType="Self.T_PipingComponents" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_PipingLabor_Data" EntityType="Self.T_PipingLabor_Data" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_PipingLaborConfiguration" EntityType="Self.T_PipingLaborConfiguration" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_PipingLaborForCSSS" EntityType="Self.T_PipingLaborForCSSS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_PipingLaborPaintRequirement" EntityType="Self.T_PipingLaborPaintRequirement" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_PipingMaterial" EntityType="Self.T_PipingMaterial" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_PipingSchedule" EntityType="Self.T_PipingSchedule" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_PipingSchemMapping" EntityType="Self.T_PipingSchemMapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_PipingSize" EntityType="Self.T_PipingSize" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Product" EntityType="Self.T_Product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_qts_All_SAP_Motors" EntityType="Self.T_qts_All_SAP_Motors" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Quote_Details" EntityType="Self.T_Quote_Details" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Quote_Parts" EntityType="Self.T_Quote_Parts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Quote_Sections" EntityType="Self.T_Quote_Sections" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Quote_Sections_old" EntityType="Self.T_Quote_Sections_old" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Quote_Sub" EntityType="Self.T_Quote_Sub" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Quotes" EntityType="Self.T_Quotes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Quotes_old" EntityType="Self.T_Quotes_old" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_ResInfo" EntityType="Self.T_ResInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Roles" EntityType="Self.T_Roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_SalesGroup" EntityType="Self.T_SalesGroup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_SalesOffice" EntityType="Self.T_SalesOffice" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_ShippableAssembly" EntityType="Self.T_ShippableAssembly" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_status" EntityType="Self.T_status" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_UserRoles" EntityType="Self.T_UserRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Users" EntityType="Self.T_Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_Contact_Information" EntityType="Self.T_Contact_Information" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[T_Contact_Information].[Auto] AS [Auto], 
+[T_Contact_Information].[Quote_Auto] AS [Quote_Auto], 
+[T_Contact_Information].[contact_salutation] AS [contact_salutation], 
+[T_Contact_Information].[contact_fname] AS [contact_fname], 
+[T_Contact_Information].[contact_lname] AS [contact_lname], 
+[T_Contact_Information].[contact_telbus] AS [contact_telbus], 
+[T_Contact_Information].[contact_telmobile] AS [contact_telmobile], 
+[T_Contact_Information].[contact_telfax] AS [contact_telfax], 
+[T_Contact_Information].[contact_email] AS [contact_email], 
+[T_Contact_Information].[CreatedBy] AS [CreatedBy], 
+[T_Contact_Information].[CreatedDate] AS [CreatedDate], 
+[T_Contact_Information].[ModifiedBy] AS [ModifiedBy], 
+[T_Contact_Information].[ModifiedDate] AS [ModifiedDate]
+FROM [dbo].[T_Contact_Information] AS [T_Contact_Information]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="T_Custom_Customers" EntityType="Self.T_Custom_Customers" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[T_Custom_Customers].[Auto] AS [Auto], 
+[T_Custom_Customers].[Quote_Auto] AS [Quote_Auto], 
+[T_Custom_Customers].[Customer_Type] AS [Customer_Type], 
+[T_Custom_Customers].[Cust_Name] AS [Cust_Name], 
+[T_Custom_Customers].[Cust_Street] AS [Cust_Street], 
+[T_Custom_Customers].[Cust_City] AS [Cust_City], 
+[T_Custom_Customers].[Cust_Zip] AS [Cust_Zip], 
+[T_Custom_Customers].[Cust_State] AS [Cust_State], 
+[T_Custom_Customers].[Cust_Country] AS [Cust_Country], 
+[T_Custom_Customers].[CreatedBy] AS [CreatedBy], 
+[T_Custom_Customers].[CreatedDate] AS [CreatedDate], 
+[T_Custom_Customers].[ModifiedBy] AS [ModifiedBy], 
+[T_Custom_Customers].[ModifiedDate] AS [ModifiedDate], 
+[T_Custom_Customers].[IsValidCustType] AS [IsValidCustType]
+FROM [dbo].[T_Custom_Customers] AS [T_Custom_Customers]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="T_Flangetype" EntityType="Self.T_Flangetype" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[T_Flangetype].[ID] AS [ID], 
+[T_Flangetype].[Flange type] AS [Flange type]
+FROM [dbo].[T_Flangetype] AS [T_Flangetype]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="T_LABOR_DATA_Tmp" EntityType="Self.T_LABOR_DATA_Tmp" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[T_LABOR_DATA_Tmp].[QN] AS [QN], 
+[T_LABOR_DATA_Tmp].[SN] AS [SN], 
+[T_LABOR_DATA_Tmp].[DTMPQTY] AS [DTMPQTY], 
+[T_LABOR_DATA_Tmp].[DTMEQTY] AS [DTMEQTY], 
+[T_LABOR_DATA_Tmp].[TDRC] AS [TDRC], 
+[T_LABOR_DATA_Tmp].[TDNC] AS [TDNC], 
+[T_LABOR_DATA_Tmp].[LDLQQTY] AS [LDLQQTY], 
+[T_LABOR_DATA_Tmp].[COMPACCPUA] AS [COMPACCPUA], 
+[T_LABOR_DATA_Tmp].[COMPACCSPEC] AS [COMPACCSPEC], 
+[T_LABOR_DATA_Tmp].[COMBREPUA] AS [COMBREPUA], 
+[T_LABOR_DATA_Tmp].[COMBRESPEC] AS [COMBRESPEC], 
+[T_LABOR_DATA_Tmp].[COMCLEPUA] AS [COMCLEPUA], 
+[T_LABOR_DATA_Tmp].[COMCLESPEC] AS [COMCLESPEC], 
+[T_LABOR_DATA_Tmp].[COMFILPUA] AS [COMFILPUA], 
+[T_LABOR_DATA_Tmp].[COMFILSPEC] AS [COMFILSPEC], 
+[T_LABOR_DATA_Tmp].[COMFLSWPUA] AS [COMFLSWPUA], 
+[T_LABOR_DATA_Tmp].[COMFLSWSPEC] AS [COMFLSWSPEC], 
+[T_LABOR_DATA_Tmp].[COMGUAPUA] AS [COMGUAPUA], 
+[T_LABOR_DATA_Tmp].[COMGUASPEC] AS [COMGUASPEC], 
+[T_LABOR_DATA_Tmp].[COMGPPUA] AS [COMGPPUA], 
+[T_LABOR_DATA_Tmp].[COMGPSPEC] AS [COMGPSPEC], 
+[T_LABOR_DATA_Tmp].[COMHEAPUA] AS [COMHEAPUA], 
+[T_LABOR_DATA_Tmp].[COMHEASPEC] AS [COMHEASPEC], 
+[T_LABOR_DATA_Tmp].[COMAHEPUA] AS [COMAHEPUA], 
+[T_LABOR_DATA_Tmp].[COMAHESPEC] AS [COMAHESPEC], 
+[T_LABOR_DATA_Tmp].[COMWHEPUA] AS [COMWHEPUA], 
+[T_LABOR_DATA_Tmp].[COMWHESPEC] AS [COMWHESPEC], 
+[T_LABOR_DATA_Tmp].[COMHOSPUA] AS [COMHOSPUA], 
+[T_LABOR_DATA_Tmp].[COMHOSSPEC] AS [COMHOSSPEC], 
+[T_LABOR_DATA_Tmp].[COMMMPUA] AS [COMMMPUA], 
+[T_LABOR_DATA_Tmp].[COMMMSPEC] AS [COMMMSPEC], 
+[T_LABOR_DATA_Tmp].[COMSVPUA] AS [COMSVPUA], 
+[T_LABOR_DATA_Tmp].[COMSVSPEC] AS [COMSVSPEC], 
+[T_LABOR_DATA_Tmp].[COMSGPUA] AS [COMSGPUA], 
+[T_LABOR_DATA_Tmp].[COMSGSPEC] AS [COMSGSPEC], 
+[T_LABOR_DATA_Tmp].[COMVPPUA] AS [COMVPPUA], 
+[T_LABOR_DATA_Tmp].[COMVPSPEC] AS [COMVPSPEC], 
+[T_LABOR_DATA_Tmp].[COMTSPUA] AS [COMTSPUA], 
+[T_LABOR_DATA_Tmp].[COMTSSPEC] AS [COMTSSPEC], 
+[T_LABOR_DATA_Tmp].[COMTPUA] AS [COMTPUA], 
+[T_LABOR_DATA_Tmp].[COMTSPEC] AS [COMTSPEC], 
+[T_LABOR_DATA_Tmp].[MPGCC1] AS [MPGCC1], 
+[T_LABOR_DATA_Tmp].[MPGCC2] AS [MPGCC2], 
+[T_LABOR_DATA_Tmp].[MPGCC3] AS [MPGCC3], 
+[T_LABOR_DATA_Tmp].[MPGCC4] AS [MPGCC4], 
+[T_LABOR_DATA_Tmp].[MPGHB1] AS [MPGHB1], 
+[T_LABOR_DATA_Tmp].[MPGHB2] AS [MPGHB2], 
+[T_LABOR_DATA_Tmp].[MPGHB3] AS [MPGHB3], 
+[T_LABOR_DATA_Tmp].[MPGHB4] AS [MPGHB4], 
+[T_LABOR_DATA_Tmp].[MPGHB5] AS [MPGHB5], 
+[T_LABOR_DATA_Tmp].[MPGVB1] AS [MPGVB1], 
+[T_LABOR_DATA_Tmp].[MPGVB2] AS [MPGVB2], 
+[T_LABOR_DATA_Tmp].[MPGVB3] AS [MPGVB3], 
+[T_LABOR_DATA_Tmp].[MPGVB4] AS [MPGVB4], 
+[T_LABOR_DATA_Tmp].[MPGVB5] AS [MPGVB5], 
+[T_LABOR_DATA_Tmp].[MPGVS1] AS [MPGVS1], 
+[T_LABOR_DATA_Tmp].[MPGVS2] AS [MPGVS2], 
+[T_LABOR_DATA_Tmp].[MPGVS3] AS [MPGVS3], 
+[T_LABOR_DATA_Tmp].[MPGVS4] AS [MPGVS4], 
+[T_LABOR_DATA_Tmp].[MPGVS5] AS [MPGVS5], 
+[T_LABOR_DATA_Tmp].[ResType] AS [ResType], 
+[T_LABOR_DATA_Tmp].[ElecConnections] AS [ElecConnections], 
+[T_LABOR_DATA_Tmp].[SoundTestFlowAndPressure] AS [SoundTestFlowAndPressure], 
+[T_LABOR_DATA_Tmp].[SoundTestFlow] AS [SoundTestFlow], 
+[T_LABOR_DATA_Tmp].[SoundTestDeadhead] AS [SoundTestDeadhead], 
+[T_LABOR_DATA_Tmp].[VibrationTestFlowAndPressure] AS [VibrationTestFlowAndPressure], 
+[T_LABOR_DATA_Tmp].[VibrationTestFlow] AS [VibrationTestFlow], 
+[T_LABOR_DATA_Tmp].[VibrationTestDeadhead] AS [VibrationTestDeadhead], 
+[T_LABOR_DATA_Tmp].[VibrationNumTestPoints] AS [VibrationNumTestPoints], 
+[T_LABOR_DATA_Tmp].[CustomerTitleBlock] AS [CustomerTitleBlock], 
+[T_LABOR_DATA_Tmp].[SpecialDimensioning] AS [SpecialDimensioning], 
+[T_LABOR_DATA_Tmp].[ResStyle] AS [ResStyle], 
+[T_LABOR_DATA_Tmp].[ComplexSchematic] AS [ComplexSchematic], 
+[T_LABOR_DATA_Tmp].[LabelType] AS [LabelType], 
+[T_LABOR_DATA_Tmp].[CustomerWitness] AS [CustomerWitness], 
+[T_LABOR_DATA_Tmp].[CableType] AS [CableType], 
+[T_LABOR_DATA_Tmp].[CableExplosion] AS [CableExplosion], 
+[T_LABOR_DATA_Tmp].[CableQty] AS [CableQty], 
+[T_LABOR_DATA_Tmp].[FittingType] AS [FittingType], 
+[T_LABOR_DATA_Tmp].[Fitting1Qty] AS [Fitting1Qty], 
+[T_LABOR_DATA_Tmp].[Fitting2Qty] AS [Fitting2Qty], 
+[T_LABOR_DATA_Tmp].[Fitting3Qty] AS [Fitting3Qty], 
+[T_LABOR_DATA_Tmp].[Fitting4Qty] AS [Fitting4Qty], 
+[T_LABOR_DATA_Tmp].[PanelMtdValvesStd] AS [PanelMtdValvesStd], 
+[T_LABOR_DATA_Tmp].[PanelMtdValvesNonStd] AS [PanelMtdValvesNonStd], 
+[T_LABOR_DATA_Tmp].[ElecBoxStd] AS [ElecBoxStd], 
+[T_LABOR_DATA_Tmp].[ElecBoxNonStd] AS [ElecBoxNonStd], 
+[T_LABOR_DATA_Tmp].[auto] AS [auto], 
+[T_LABOR_DATA_Tmp].[CreatedBy] AS [CreatedBy], 
+[T_LABOR_DATA_Tmp].[CreatedDate] AS [CreatedDate], 
+[T_LABOR_DATA_Tmp].[ModifiedBy] AS [ModifiedBy], 
+[T_LABOR_DATA_Tmp].[ModifiedDate] AS [ModifiedDate], 
+[T_LABOR_DATA_Tmp].[SubassemblyID] AS [SubassemblyID], 
+[T_LABOR_DATA_Tmp].[Adjustengineering] AS [Adjustengineering], 
+[T_LABOR_DATA_Tmp].[Adjustdesign] AS [Adjustdesign], 
+[T_LABOR_DATA_Tmp].[AdjustWiringDesign] AS [AdjustWiringDesign], 
+[T_LABOR_DATA_Tmp].[AdjustPickParts] AS [AdjustPickParts], 
+[T_LABOR_DATA_Tmp].[Adjustwiring] AS [Adjustwiring], 
+[T_LABOR_DATA_Tmp].[Adjustwelding] AS [Adjustwelding], 
+[T_LABOR_DATA_Tmp].[Adjusttest] AS [Adjusttest], 
+[T_LABOR_DATA_Tmp].[AdjustShippingTag] AS [AdjustShippingTag], 
+[T_LABOR_DATA_Tmp].[Adjustpaint] AS [Adjustpaint], 
+[T_LABOR_DATA_Tmp].[Adjustdocumentation] AS [Adjustdocumentation], 
+[T_LABOR_DATA_Tmp].[Adjustassembly] AS [Adjustassembly], 
+[T_LABOR_DATA_Tmp].[AdjustControlsEngineering] AS [AdjustControlsEngineering], 
+[T_LABOR_DATA_Tmp].[AdjustProgramming] AS [AdjustProgramming], 
+[T_LABOR_DATA_Tmp].[AdjustIM_Machining_Man] AS [AdjustIM_Machining_Man], 
+[T_LABOR_DATA_Tmp].[AdjustIM_Machining_Cnc] AS [AdjustIM_Machining_Cnc], 
+[T_LABOR_DATA_Tmp].[AdjustAssemblyHoursNonSAPPiping] AS [AdjustAssemblyHoursNonSAPPiping], 
+[T_LABOR_DATA_Tmp].[AdjustEngineeringHoursNonSAPPiping] AS [AdjustEngineeringHoursNonSAPPiping], 
+[T_LABOR_DATA_Tmp].[AdjustDesignHoursNonSAPPiping] AS [AdjustDesignHoursNonSAPPiping], 
+[T_LABOR_DATA_Tmp].[AdjustPaintHoursNonSAPPiping] AS [AdjustPaintHoursNonSAPPiping], 
+[T_LABOR_DATA_Tmp].[AdjustWeldingHoursNonSAPPiping] AS [AdjustWeldingHoursNonSAPPiping], 
+[T_LABOR_DATA_Tmp].[AdjustDescriptionDetails] AS [AdjustDescriptionDetails], 
+[T_LABOR_DATA_Tmp].[NonAdjustDescriptionDetails] AS [NonAdjustDescriptionDetails]
+FROM [dbo].[T_LABOR_DATA_Tmp] AS [T_LABOR_DATA_Tmp]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="T_Labor_Tmp" EntityType="Self.T_Labor_Tmp" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[T_Labor_Tmp].[QN] AS [QN], 
+[T_Labor_Tmp].[SN] AS [SN], 
+[T_Labor_Tmp].[engineering] AS [engineering], 
+[T_Labor_Tmp].[design] AS [design], 
+[T_Labor_Tmp].[assembly] AS [assembly], 
+[T_Labor_Tmp].[wiring] AS [wiring], 
+[T_Labor_Tmp].[welding] AS [welding], 
+[T_Labor_Tmp].[test] AS [test], 
+[T_Labor_Tmp].[paint] AS [paint], 
+[T_Labor_Tmp].[documentation] AS [documentation], 
+[T_Labor_Tmp].[labor_total] AS [labor_total], 
+[T_Labor_Tmp].[labor_margin] AS [labor_margin], 
+[T_Labor_Tmp].[labor_net_total] AS [labor_net_total], 
+[T_Labor_Tmp].[auto] AS [auto], 
+[T_Labor_Tmp].[WiringDesign] AS [WiringDesign], 
+[T_Labor_Tmp].[TestHydraulic] AS [TestHydraulic], 
+[T_Labor_Tmp].[TestSound] AS [TestSound], 
+[T_Labor_Tmp].[TestVibration] AS [TestVibration], 
+[T_Labor_Tmp].[ShippingTag] AS [ShippingTag], 
+[T_Labor_Tmp].[PickParts] AS [PickParts], 
+[T_Labor_Tmp].[TotalLaborDollars] AS [TotalLaborDollars], 
+[T_Labor_Tmp].[TotalLabor] AS [TotalLabor], 
+[T_Labor_Tmp].[CreatedBy] AS [CreatedBy], 
+[T_Labor_Tmp].[CreatedDate] AS [CreatedDate], 
+[T_Labor_Tmp].[ModifiedBy] AS [ModifiedBy], 
+[T_Labor_Tmp].[ModifiedDate] AS [ModifiedDate], 
+[T_Labor_Tmp].[SubassemblyID] AS [SubassemblyID], 
+[T_Labor_Tmp].[ControlsEngineering] AS [ControlsEngineering], 
+[T_Labor_Tmp].[Programming] AS [Programming], 
+[T_Labor_Tmp].[IM_Machining_Man] AS [IM_Machining_Man], 
+[T_Labor_Tmp].[IM_Machining_CNC] AS [IM_Machining_CNC]
+FROM [dbo].[T_Labor_Tmp] AS [T_Labor_Tmp]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="T_MaterialCostFactors" EntityType="Self.T_MaterialCostFactors" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[T_MaterialCostFactors].[Id] AS [Id], 
+[T_MaterialCostFactors].[CostFactor] AS [CostFactor], 
+[T_MaterialCostFactors].[Percentage] AS [Percentage], 
+[T_MaterialCostFactors].[Comments] AS [Comments], 
+[T_MaterialCostFactors].[CreatedBy] AS [CreatedBy], 
+[T_MaterialCostFactors].[CreatedDate] AS [CreatedDate], 
+[T_MaterialCostFactors].[ModifiedBy] AS [ModifiedBy], 
+[T_MaterialCostFactors].[ModifiedDate] AS [ModifiedDate]
+FROM [dbo].[T_MaterialCostFactors] AS [T_MaterialCostFactors]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="T_Piping_PaintDetail" EntityType="Self.T_Piping_PaintDetail" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[T_Piping_PaintDetail].[PaintID] AS [PaintID], 
+[T_Piping_PaintDetail].[Paint_Type] AS [Paint_Type], 
+[T_Piping_PaintDetail].[Paint_Description] AS [Paint_Description], 
+[T_Piping_PaintDetail].[value] AS [value], 
+[T_Piping_PaintDetail].[metal_type] AS [metal_type], 
+[T_Piping_PaintDetail].[flgStatus] AS [flgStatus]
+FROM [dbo].[T_Piping_PaintDetail] AS [T_Piping_PaintDetail]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="T_PipingLabor_Data_Tmp" EntityType="Self.T_PipingLabor_Data_Tmp" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[T_PipingLabor_Data_Tmp].[Id] AS [Id], 
+[T_PipingLabor_Data_Tmp].[QN] AS [QN], 
+[T_PipingLabor_Data_Tmp].[SN] AS [SN], 
+[T_PipingLabor_Data_Tmp].[subassemblyid] AS [subassemblyid], 
+[T_PipingLabor_Data_Tmp].[Conduit] AS [Conduit], 
+[T_PipingLabor_Data_Tmp].[Unit] AS [Unit], 
+[T_PipingLabor_Data_Tmp].[Material] AS [Material], 
+[T_PipingLabor_Data_Tmp].[Joint] AS [Joint], 
+[T_PipingLabor_Data_Tmp].[Paint_Details] AS [Paint_Details], 
+[T_PipingLabor_Data_Tmp].[Method] AS [Method], 
+[T_PipingLabor_Data_Tmp].[component] AS [component], 
+[T_PipingLabor_Data_Tmp].[size] AS [size], 
+[T_PipingLabor_Data_Tmp].[schedule] AS [schedule], 
+[T_PipingLabor_Data_Tmp].[Type] AS [Type], 
+[T_PipingLabor_Data_Tmp].[PackageQty] AS [PackageQty], 
+[T_PipingLabor_Data_Tmp].[PartQty] AS [PartQty], 
+[T_PipingLabor_Data_Tmp].[PN] AS [PN], 
+[T_PipingLabor_Data_Tmp].[Description] AS [Description], 
+[T_PipingLabor_Data_Tmp].[Cost] AS [Cost], 
+[T_PipingLabor_Data_Tmp].[TotalCost] AS [TotalCost], 
+[T_PipingLabor_Data_Tmp].[PipingPackageID] AS [PipingPackageID]
+FROM [dbo].[T_PipingLabor_Data_Tmp] AS [T_PipingLabor_Data_Tmp]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="T_PipingType" EntityType="Self.T_PipingType" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[T_PipingType].[ID] AS [ID], 
+[T_PipingType].[Piping Type] AS [Piping Type]
+FROM [dbo].[T_PipingType] AS [T_PipingType]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="T_qts_tblPUAdescr" EntityType="Self.T_qts_tblPUAdescr" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[T_qts_tblPUAdescr].[SHEET NO] AS [SHEET NO], 
+[T_qts_tblPUAdescr].[DESCRIPTION] AS [DESCRIPTION], 
+[T_qts_tblPUAdescr].[SECT] AS [SECT], 
+[T_qts_tblPUAdescr].[FILENAME] AS [FILENAME], 
+[T_qts_tblPUAdescr].[Field5] AS [Field5], 
+[T_qts_tblPUAdescr].[Auto] AS [Auto]
+FROM [dbo].[T_qts_tblPUAdescr] AS [T_qts_tblPUAdescr]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="T_Quote_Parts_Tmp" EntityType="Self.T_Quote_Parts_Tmp" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[T_Quote_Parts_Tmp].[sub] AS [sub], 
+[T_Quote_Parts_Tmp].[SN] AS [SN], 
+[T_Quote_Parts_Tmp].[LI] AS [LI], 
+[T_Quote_Parts_Tmp].[qty] AS [qty], 
+[T_Quote_Parts_Tmp].[PN] AS [PN], 
+[T_Quote_Parts_Tmp].[TP] AS [TP], 
+[T_Quote_Parts_Tmp].[descr] AS [descr], 
+[T_Quote_Parts_Tmp].[net_cost] AS [net_cost], 
+[T_Quote_Parts_Tmp].[cost] AS [cost], 
+[T_Quote_Parts_Tmp].[part_markup] AS [part_markup], 
+[T_Quote_Parts_Tmp].[revision] AS [revision], 
+[T_Quote_Parts_Tmp].[auto] AS [auto], 
+[T_Quote_Parts_Tmp].[QN] AS [QN], 
+[T_Quote_Parts_Tmp].[PipingWelding] AS [PipingWelding], 
+[T_Quote_Parts_Tmp].[PipingAssembly] AS [PipingAssembly], 
+[T_Quote_Parts_Tmp].[materialoverhead] AS [materialoverhead], 
+[T_Quote_Parts_Tmp].[plantadministration] AS [plantadministration], 
+[T_Quote_Parts_Tmp].[manufacturingcost] AS [manufacturingcost], 
+[T_Quote_Parts_Tmp].[sga] AS [sga], 
+[T_Quote_Parts_Tmp].[riskfactor] AS [riskfactor], 
+[T_Quote_Parts_Tmp].[sellprice] AS [sellprice], 
+[T_Quote_Parts_Tmp].[CopyFrom] AS [CopyFrom], 
+[T_Quote_Parts_Tmp].[UserDesc] AS [UserDesc], 
+[T_Quote_Parts_Tmp].[ShippableAssemblyId] AS [ShippableAssemblyId], 
+[T_Quote_Parts_Tmp].[SubOrder] AS [SubOrder], 
+[T_Quote_Parts_Tmp].[IsCostChanged] AS [IsCostChanged], 
+[T_Quote_Parts_Tmp].[InternalNote] AS [InternalNote], 
+[T_Quote_Parts_Tmp].[IsCostIncrease] AS [IsCostIncrease], 
+[T_Quote_Parts_Tmp].[SAPCost] AS [SAPCost], 
+[T_Quote_Parts_Tmp].[SAPNetCost] AS [SAPNetCost]
+FROM [dbo].[T_Quote_Parts_Tmp] AS [T_Quote_Parts_Tmp]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="T_Quote_Sections_Tmp" EntityType="Self.T_Quote_Sections_Tmp" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[T_Quote_Sections_Tmp].[QN] AS [QN], 
+[T_Quote_Sections_Tmp].[section] AS [section], 
+[T_Quote_Sections_Tmp].[SN] AS [SN], 
+[T_Quote_Sections_Tmp].[descr] AS [descr], 
+[T_Quote_Sections_Tmp].[section_markup] AS [section_markup], 
+[T_Quote_Sections_Tmp].[part_number] AS [part_number], 
+[T_Quote_Sections_Tmp].[sap_descr] AS [sap_descr], 
+[T_Quote_Sections_Tmp].[revision] AS [revision], 
+[T_Quote_Sections_Tmp].[section_cost] AS [section_cost], 
+[T_Quote_Sections_Tmp].[sect_net_cost] AS [sect_net_cost], 
+[T_Quote_Sections_Tmp].[qty] AS [qty], 
+[T_Quote_Sections_Tmp].[DefaultPartMargin] AS [DefaultPartMargin], 
+[T_Quote_Sections_Tmp].[plantadministration] AS [plantadministration], 
+[T_Quote_Sections_Tmp].[manufacturingcost] AS [manufacturingcost], 
+[T_Quote_Sections_Tmp].[sga] AS [sga], 
+[T_Quote_Sections_Tmp].[riskfactor] AS [riskfactor], 
+[T_Quote_Sections_Tmp].[sellprice] AS [sellprice], 
+[T_Quote_Sections_Tmp].[labor_tot] AS [labor_tot], 
+[T_Quote_Sections_Tmp].[commission] AS [commission], 
+[T_Quote_Sections_Tmp].[materialoverhead] AS [materialoverhead], 
+[T_Quote_Sections_Tmp].[CreatedBy] AS [CreatedBy], 
+[T_Quote_Sections_Tmp].[CreatedDate] AS [CreatedDate], 
+[T_Quote_Sections_Tmp].[ModifiedBy] AS [ModifiedBy], 
+[T_Quote_Sections_Tmp].[ModifiedDate] AS [ModifiedDate], 
+[T_Quote_Sections_Tmp].[auto] AS [auto], 
+[T_Quote_Sections_Tmp].[SectionOrder] AS [SectionOrder], 
+[T_Quote_Sections_Tmp].[RiskFactorPercentage] AS [RiskFactorPercentage], 
+[T_Quote_Sections_Tmp].[SGAPercentage] AS [SGAPercentage]
+FROM [dbo].[T_Quote_Sections_Tmp] AS [T_Quote_Sections_Tmp]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="T_Quote_Sub_Tmp" EntityType="Self.T_Quote_Sub_Tmp" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[T_Quote_Sub_Tmp].[SN] AS [SN], 
+[T_Quote_Sub_Tmp].[LI] AS [LI], 
+[T_Quote_Sub_Tmp].[qty] AS [qty], 
+[T_Quote_Sub_Tmp].[pn] AS [pn], 
+[T_Quote_Sub_Tmp].[tp] AS [tp], 
+[T_Quote_Sub_Tmp].[descr] AS [descr], 
+[T_Quote_Sub_Tmp].[net_cost] AS [net_cost], 
+[T_Quote_Sub_Tmp].[cost] AS [cost], 
+[T_Quote_Sub_Tmp].[part_markup] AS [part_markup], 
+[T_Quote_Sub_Tmp].[revision] AS [revision], 
+[T_Quote_Sub_Tmp].[auto] AS [auto], 
+[T_Quote_Sub_Tmp].[sub_descr] AS [sub_descr], 
+[T_Quote_Sub_Tmp].[QN] AS [QN], 
+[T_Quote_Sub_Tmp].[PipingWelding] AS [PipingWelding], 
+[T_Quote_Sub_Tmp].[PipingAssembly] AS [PipingAssembly], 
+[T_Quote_Sub_Tmp].[UserDesc] AS [UserDesc], 
+[T_Quote_Sub_Tmp].[ParentId] AS [ParentId], 
+[T_Quote_Sub_Tmp].[IsCostChanged] AS [IsCostChanged], 
+[T_Quote_Sub_Tmp].[InternalNote] AS [InternalNote], 
+[T_Quote_Sub_Tmp].[IsCostIncrease] AS [IsCostIncrease], 
+[T_Quote_Sub_Tmp].[SAPCost] AS [SAPCost], 
+[T_Quote_Sub_Tmp].[SAPNetCost] AS [SAPNetCost]
+FROM [dbo].[T_Quote_Sub_Tmp] AS [T_Quote_Sub_Tmp]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="T_sap_customer" EntityType="Self.T_sap_customer" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[T_sap_customer].[Customer] AS [Customer], 
+[T_sap_customer].[Name1] AS [Name1], 
+[T_sap_customer].[Name2] AS [Name2], 
+[T_sap_customer].[Street] AS [Street], 
+[T_sap_customer].[POBox] AS [POBox], 
+[T_sap_customer].[City] AS [City], 
+[T_sap_customer].[Rg] AS [Rg], 
+[T_sap_customer].[PostalCode] AS [PostalCode], 
+[T_sap_customer].[Cty] AS [Cty], 
+[T_sap_customer].[ModifiedBy] AS [ModifiedBy], 
+[T_sap_customer].[ModifiedDate] AS [ModifiedDate], 
+[T_sap_customer].[SalesOfficeId] AS [SalesOfficeId], 
+[T_sap_customer].[SalesGroupId] AS [SalesGroupId]
+FROM [dbo].[T_sap_customer] AS [T_sap_customer]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="T_SAPCustomersImport_Temp" EntityType="Self.T_SAPCustomersImport_Temp" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[T_SAPCustomersImport_Temp].[CustomerId] AS [CustomerId], 
+[T_SAPCustomersImport_Temp].[Customer] AS [Customer], 
+[T_SAPCustomersImport_Temp].[PostalCode] AS [PostalCode], 
+[T_SAPCustomersImport_Temp].[Region] AS [Region], 
+[T_SAPCustomersImport_Temp].[City] AS [City], 
+[T_SAPCustomersImport_Temp].[Street] AS [Street], 
+[T_SAPCustomersImport_Temp].[Name] AS [Name], 
+[T_SAPCustomersImport_Temp].[LastUpdatedBy] AS [LastUpdatedBy], 
+[T_SAPCustomersImport_Temp].[LastUpdatedDate] AS [LastUpdatedDate]
+FROM [dbo].[T_SAPCustomersImport_Temp] AS [T_SAPCustomersImport_Temp]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="T_sapmats" EntityType="Self.T_sapmats" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[T_sapmats].[ID] AS [ID], 
+[T_sapmats].[Material] AS [Material], 
+[T_sapmats].[Material number] AS [Material number], 
+[T_sapmats].[PGr] AS [PGr], 
+[T_sapmats].[Purchasing group] AS [Purchasing group], 
+[T_sapmats].[MRPCn] AS [MRPCn], 
+[T_sapmats].[MRP controller] AS [MRP controller], 
+[T_sapmats].[MS] AS [MS], 
+[T_sapmats].[Plant-Specific Material Status] AS [Plant-Specific Material Status], 
+[T_sapmats].[Product hierarchy] AS [Product hierarchy], 
+[T_sapmats].[Field11] AS [Field11], 
+[T_sapmats].[Total stock] AS [Total stock], 
+[T_sapmats].[BUn] AS [BUn], 
+[T_sapmats].[Standard price] AS [Standard price], 
+[T_sapmats].[Comsumption] AS [Comsumption], 
+[T_sapmats].[MG 2] AS [MG 2], 
+[T_sapmats].[Material group 2] AS [Material group 2]
+FROM [dbo].[T_sapmats] AS [T_sapmats]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__T_Users__RoleId__382F5661" Association="Self.FK__T_Users__RoleId__382F5661">
+      <End Role="T_Roles" EntitySet="T_Roles" />
+      <End Role="T_Users" EntitySet="T_Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_DocumentLink_T_DocumentLinkCategory" Association="Self.FK_T_DocumentLink_T_DocumentLinkCategory">
+      <End Role="T_DocumentLinkCategory" EntitySet="T_DocumentLinkCategory" />
+      <End Role="T_DocumentLink" EntitySet="T_DocumentLink" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_Fields_Value_T_Fields" Association="Self.FK_T_Fields_Value_T_Fields">
+      <End Role="T_Fields" EntitySet="T_Fields" />
+      <End Role="T_Fields_Value" EntitySet="T_Fields_Value" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_LABOR_DATA_T_QuotesA" Association="Self.FK_T_LABOR_DATA_T_QuotesA">
+      <End Role="T_Quotes" EntitySet="T_Quotes" />
+      <End Role="T_LABOR_DATA" EntitySet="T_LABOR_DATA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_Labor_T_QuotesA" Association="Self.FK_T_Labor_T_QuotesA">
+      <End Role="T_Quotes" EntitySet="T_Quotes" />
+      <End Role="T_Labor" EntitySet="T_Labor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_LaborCostFactors_ShippableAssembly_T_ShippableAssemblyB" Association="Self.FK_T_LaborCostFactors_ShippableAssembly_T_ShippableAssemblyB">
+      <End Role="T_ShippableAssembly" EntitySet="T_ShippableAssembly" />
+      <End Role="T_LaborCostFactors_ShippableAssembly" EntitySet="T_LaborCostFactors_ShippableAssembly" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_Quote_Sections_T_Quote_Sections" Association="Self.FK_T_Quote_Sections_T_Quote_Sections">
+      <End Role="T_Quotes_old" EntitySet="T_Quotes_old" />
+      <End Role="T_Quote_Sections_old" EntitySet="T_Quote_Sections_old" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_Quote_Sections_T_Quote_Sections1" Association="Self.FK_T_Quote_Sections_T_Quote_Sections1">
+      <End Role="T_Quotes" EntitySet="T_Quotes" />
+      <End Role="T_Quote_Sections" EntitySet="T_Quote_Sections" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_Quote_Sub_T_QuotesA" Association="Self.FK_T_Quote_Sub_T_QuotesA">
+      <End Role="T_Quotes" EntitySet="T_Quotes" />
+      <End Role="T_Quote_Sub" EntitySet="T_Quote_Sub" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_sap_customer_T_SalesGroup" Association="Self.FK_T_sap_customer_T_SalesGroup">
+      <End Role="T_SalesGroup" EntitySet="T_SalesGroup" />
+      <End Role="T_sap_customer" EntitySet="T_sap_customer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_sap_customer_T_SalesOffice" Association="Self.FK_T_sap_customer_T_SalesOffice">
+      <End Role="T_SalesOffice" EntitySet="T_SalesOffice" />
+      <End Role="T_sap_customer" EntitySet="T_sap_customer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_UserRoles_T_AppRole" Association="Self.FK_T_UserRoles_T_AppRole">
+      <End Role="T_AppRole" EntitySet="T_AppRole" />
+      <End Role="T_UserRoles" EntitySet="T_UserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_T_UserRoles_T_Users" Association="Self.FK_T_UserRoles_T_Users">
+      <End Role="T_Users" EntitySet="T_Users" />
+      <End Role="T_UserRoles" EntitySet="T_UserRoles" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,1513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QuoteSystemModelStoreContainer" CdmEntityContainer="QuoteSystemLEntities">
+    <EntitySetMapping Name="T_Accumulators">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Accumulators">
+        <MappingFragment StoreEntitySet="T_Accumulators">
+          <ScalarProperty Name="PN" ColumnName="PN" />
+          <ScalarProperty Name="MaterialNumber" ColumnName="MaterialNumber" />
+          <ScalarProperty Name="QuoteDescription" ColumnName="QuoteDescription" />
+          <ScalarProperty Name="StandardPrice" ColumnName="StandardPrice" />
+          <ScalarProperty Name="MG2" ColumnName="MG2" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="info1" ColumnName="info1" />
+          <ScalarProperty Name="info2" ColumnName="info2" />
+          <ScalarProperty Name="info3" ColumnName="info3" />
+          <ScalarProperty Name="info4" ColumnName="info4" />
+          <ScalarProperty Name="info5" ColumnName="info5" />
+          <ScalarProperty Name="info6" ColumnName="info6" />
+          <ScalarProperty Name="info7" ColumnName="info7" />
+          <ScalarProperty Name="info8" ColumnName="info8" />
+          <ScalarProperty Name="info9" ColumnName="info9" />
+          <ScalarProperty Name="info10" ColumnName="info10" />
+          <ScalarProperty Name="AccumulatorId" ColumnName="AccumulatorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_ANSIPiping">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_ANSIPiping">
+        <MappingFragment StoreEntitySet="T_ANSIPiping">
+          <ScalarProperty Name="PipingId" ColumnName="PipingId" />
+          <ScalarProperty Name="SAP_m_n" ColumnName="SAP_m_n" />
+          <ScalarProperty Name="SAP_Description" ColumnName="SAP_Description" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SAP_Cost" ColumnName="SAP_Cost" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Conduit" ColumnName="Conduit" />
+          <ScalarProperty Name="Units" ColumnName="Units" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="Joint" ColumnName="Joint" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Size_Unit" ColumnName="Size_Unit" />
+          <ScalarProperty Name="Schedule" ColumnName="Schedule" />
+          <ScalarProperty Name="Component" ColumnName="Component" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Paint_Requirement" ColumnName="Paint_Requirement" />
+          <ScalarProperty Name="Weld_Time" ColumnName="Weld_Time" />
+          <ScalarProperty Name="Cut_Prep" ColumnName="Cut_Prep" />
+          <ScalarProperty Name="Assemble" ColumnName="Assemble" />
+          <ScalarProperty Name="MTL1" ColumnName="MTL1" />
+          <ScalarProperty Name="MTL2" ColumnName="MTL2" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="HrsWeld" ColumnName="HrsWeld" />
+          <ScalarProperty Name="HrsAssy" ColumnName="HrsAssy" />
+          <ScalarProperty Name="Schem_Component" ColumnName="Schem_Component" />
+          <ScalarProperty Name="MTLsub" ColumnName="MTLsub" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_AppRole">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_AppRole">
+        <MappingFragment StoreEntitySet="T_AppRole">
+          <ScalarProperty Name="AppRoleId" ColumnName="AppRoleId" />
+          <ScalarProperty Name="AppRoleName" ColumnName="AppRoleName" />
+          <ScalarProperty Name="AppRoleDescription" ColumnName="AppRoleDescription" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_BillToCustomerDetails">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_BillToCustomerDetails">
+        <MappingFragment StoreEntitySet="T_BillToCustomerDetails">
+          <ScalarProperty Name="BillToCustomerId" ColumnName="BillToCustomerId" />
+          <ScalarProperty Name="CustomerRole" ColumnName="CustomerRole" />
+          <ScalarProperty Name="CustomerRoleDescription" ColumnName="CustomerRoleDescription" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Conduit">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Conduit">
+        <MappingFragment StoreEntitySet="T_Conduit">
+          <ScalarProperty Name="Conduit_ID" ColumnName="Conduit_ID" />
+          <ScalarProperty Name="Size_Min" ColumnName="Size_Min" />
+          <ScalarProperty Name="Size_Max" ColumnName="Size_Max" />
+          <ScalarProperty Name="Assembly_hrs" ColumnName="Assembly_hrs" />
+          <ScalarProperty Name="flgStatus" ColumnName="flgStatus" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Configuration">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Configuration">
+        <MappingFragment StoreEntitySet="T_Configuration">
+          <ScalarProperty Name="Config_No" ColumnName="Config_No" />
+          <ScalarProperty Name="Config_Name" ColumnName="Config_Name" />
+          <ScalarProperty Name="Config_Value" ColumnName="Config_Value" />
+          <ScalarProperty Name="Config_Date" ColumnName="Config_Date" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DocumentLink">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_DocumentLink">
+        <MappingFragment StoreEntitySet="T_DocumentLink">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_DocumentLinkCategory">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_DocumentLinkCategory">
+        <MappingFragment StoreEntitySet="T_DocumentLinkCategory">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Fields">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Fields">
+        <MappingFragment StoreEntitySet="T_Fields">
+          <ScalarProperty Name="FieldId" ColumnName="FieldId" />
+          <ScalarProperty Name="FieldName" ColumnName="FieldName" />
+          <ScalarProperty Name="FieldDescription" ColumnName="FieldDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Fields_Value">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Fields_Value">
+        <MappingFragment StoreEntitySet="T_Fields_Value">
+          <ScalarProperty Name="FieldValueId" ColumnName="FieldValueId" />
+          <ScalarProperty Name="FieldId" ColumnName="FieldId" />
+          <ScalarProperty Name="FieldValueName" ColumnName="FieldValueName" />
+          <ScalarProperty Name="FieldValueDescription" ColumnName="FieldValueDescription" />
+          <ScalarProperty Name="FieldValueNameId" ColumnName="FieldValueNameId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Flange_type">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Flange_type">
+        <MappingFragment StoreEntitySet="T_Flange type">
+          <ScalarProperty Name="FlangetypeID" ColumnName="FlangetypeID" />
+          <ScalarProperty Name="Flange_type" ColumnName="Flange type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_FlangePad">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_FlangePad">
+        <MappingFragment StoreEntitySet="T_FlangePad">
+          <ScalarProperty Name="FlangePadID" ColumnName="FlangePadID" />
+          <ScalarProperty Name="Flange_Pad" ColumnName="Flange Pad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_FlangePattern">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_FlangePattern">
+        <MappingFragment StoreEntitySet="T_FlangePattern">
+          <ScalarProperty Name="FlangePatternID" ColumnName="FlangePatternID" />
+          <ScalarProperty Name="Flange_Pattern" ColumnName="Flange Pattern" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Flanges">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Flanges">
+        <MappingFragment StoreEntitySet="T_Flanges">
+          <ScalarProperty Name="PN" ColumnName="PN" />
+          <ScalarProperty Name="MaterialNumber" ColumnName="MaterialNumber" />
+          <ScalarProperty Name="QuoteDescription" ColumnName="QuoteDescription" />
+          <ScalarProperty Name="StandardPrice" ColumnName="StandardPrice" />
+          <ScalarProperty Name="MG2" ColumnName="MG2" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="INFO1" ColumnName="INFO1" />
+          <ScalarProperty Name="INFO2" ColumnName="INFO2" />
+          <ScalarProperty Name="INFO3" ColumnName="INFO3" />
+          <ScalarProperty Name="INFO4" ColumnName="INFO4" />
+          <ScalarProperty Name="INFO5" ColumnName="INFO5" />
+          <ScalarProperty Name="INFO6" ColumnName="INFO6" />
+          <ScalarProperty Name="INFO7" ColumnName="INFO7" />
+          <ScalarProperty Name="FlangeId" ColumnName="FlangeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Labor">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Labor">
+        <MappingFragment StoreEntitySet="T_Labor">
+          <ScalarProperty Name="QN" ColumnName="QN" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="engineering" ColumnName="engineering" />
+          <ScalarProperty Name="design" ColumnName="design" />
+          <ScalarProperty Name="assembly" ColumnName="assembly" />
+          <ScalarProperty Name="wiring" ColumnName="wiring" />
+          <ScalarProperty Name="welding" ColumnName="welding" />
+          <ScalarProperty Name="test" ColumnName="test" />
+          <ScalarProperty Name="paint" ColumnName="paint" />
+          <ScalarProperty Name="documentation" ColumnName="documentation" />
+          <ScalarProperty Name="labor_total" ColumnName="labor_total" />
+          <ScalarProperty Name="labor_margin" ColumnName="labor_margin" />
+          <ScalarProperty Name="labor_net_total" ColumnName="labor_net_total" />
+          <ScalarProperty Name="auto" ColumnName="auto" />
+          <ScalarProperty Name="WiringDesign" ColumnName="WiringDesign" />
+          <ScalarProperty Name="TestHydraulic" ColumnName="TestHydraulic" />
+          <ScalarProperty Name="TestSound" ColumnName="TestSound" />
+          <ScalarProperty Name="TestVibration" ColumnName="TestVibration" />
+          <ScalarProperty Name="ShippingTag" ColumnName="ShippingTag" />
+          <ScalarProperty Name="PickParts" ColumnName="PickParts" />
+          <ScalarProperty Name="TotalLaborDollars" ColumnName="TotalLaborDollars" />
+          <ScalarProperty Name="TotalLabor" ColumnName="TotalLabor" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="SubassemblyID" ColumnName="SubassemblyID" />
+          <ScalarProperty Name="ControlsEngineering" ColumnName="ControlsEngineering" />
+          <ScalarProperty Name="Programming" ColumnName="Programming" />
+          <ScalarProperty Name="IM_Machining_Man" ColumnName="IM_Machining_Man" />
+          <ScalarProperty Name="IM_Machining_CNC" ColumnName="IM_Machining_CNC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_LABOR_DATA">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_LABOR_DATA">
+        <MappingFragment StoreEntitySet="T_LABOR_DATA">
+          <ScalarProperty Name="QN" ColumnName="QN" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="DTMPQTY" ColumnName="DTMPQTY" />
+          <ScalarProperty Name="DTMEQTY" ColumnName="DTMEQTY" />
+          <ScalarProperty Name="TDRC" ColumnName="TDRC" />
+          <ScalarProperty Name="TDNC" ColumnName="TDNC" />
+          <ScalarProperty Name="LDLQQTY" ColumnName="LDLQQTY" />
+          <ScalarProperty Name="COMPACCPUA" ColumnName="COMPACCPUA" />
+          <ScalarProperty Name="COMPACCSPEC" ColumnName="COMPACCSPEC" />
+          <ScalarProperty Name="COMBREPUA" ColumnName="COMBREPUA" />
+          <ScalarProperty Name="COMBRESPEC" ColumnName="COMBRESPEC" />
+          <ScalarProperty Name="COMCLEPUA" ColumnName="COMCLEPUA" />
+          <ScalarProperty Name="COMCLESPEC" ColumnName="COMCLESPEC" />
+          <ScalarProperty Name="COMFILPUA" ColumnName="COMFILPUA" />
+          <ScalarProperty Name="COMFILSPEC" ColumnName="COMFILSPEC" />
+          <ScalarProperty Name="COMFLSWPUA" ColumnName="COMFLSWPUA" />
+          <ScalarProperty Name="COMFLSWSPEC" ColumnName="COMFLSWSPEC" />
+          <ScalarProperty Name="COMGUAPUA" ColumnName="COMGUAPUA" />
+          <ScalarProperty Name="COMGUASPEC" ColumnName="COMGUASPEC" />
+          <ScalarProperty Name="COMGPPUA" ColumnName="COMGPPUA" />
+          <ScalarProperty Name="COMGPSPEC" ColumnName="COMGPSPEC" />
+          <ScalarProperty Name="COMHEAPUA" ColumnName="COMHEAPUA" />
+          <ScalarProperty Name="COMHEASPEC" ColumnName="COMHEASPEC" />
+          <ScalarProperty Name="COMAHEPUA" ColumnName="COMAHEPUA" />
+          <ScalarProperty Name="COMAHESPEC" ColumnName="COMAHESPEC" />
+          <ScalarProperty Name="COMWHEPUA" ColumnName="COMWHEPUA" />
+          <ScalarProperty Name="COMWHESPEC" ColumnName="COMWHESPEC" />
+          <ScalarProperty Name="COMHOSPUA" ColumnName="COMHOSPUA" />
+          <ScalarProperty Name="COMHOSSPEC" ColumnName="COMHOSSPEC" />
+          <ScalarProperty Name="COMMMPUA" ColumnName="COMMMPUA" />
+          <ScalarProperty Name="COMMMSPEC" ColumnName="COMMMSPEC" />
+          <ScalarProperty Name="COMSVPUA" ColumnName="COMSVPUA" />
+          <ScalarProperty Name="COMSVSPEC" ColumnName="COMSVSPEC" />
+          <ScalarProperty Name="COMSGPUA" ColumnName="COMSGPUA" />
+          <ScalarProperty Name="COMSGSPEC" ColumnName="COMSGSPEC" />
+          <ScalarProperty Name="COMVPPUA" ColumnName="COMVPPUA" />
+          <ScalarProperty Name="COMVPSPEC" ColumnName="COMVPSPEC" />
+          <ScalarProperty Name="COMTSPUA" ColumnName="COMTSPUA" />
+          <ScalarProperty Name="COMTSSPEC" ColumnName="COMTSSPEC" />
+          <ScalarProperty Name="COMTPUA" ColumnName="COMTPUA" />
+          <ScalarProperty Name="COMTSPEC" ColumnName="COMTSPEC" />
+          <ScalarProperty Name="MPGCC1" ColumnName="MPGCC1" />
+          <ScalarProperty Name="MPGCC2" ColumnName="MPGCC2" />
+          <ScalarProperty Name="MPGCC3" ColumnName="MPGCC3" />
+          <ScalarProperty Name="MPGCC4" ColumnName="MPGCC4" />
+          <ScalarProperty Name="MPGHB1" ColumnName="MPGHB1" />
+          <ScalarProperty Name="MPGHB2" ColumnName="MPGHB2" />
+          <ScalarProperty Name="MPGHB3" ColumnName="MPGHB3" />
+          <ScalarProperty Name="MPGHB4" ColumnName="MPGHB4" />
+          <ScalarProperty Name="MPGHB5" ColumnName="MPGHB5" />
+          <ScalarProperty Name="MPGVB1" ColumnName="MPGVB1" />
+          <ScalarProperty Name="MPGVB2" ColumnName="MPGVB2" />
+          <ScalarProperty Name="MPGVB3" ColumnName="MPGVB3" />
+          <ScalarProperty Name="MPGVB4" ColumnName="MPGVB4" />
+          <ScalarProperty Name="MPGVB5" ColumnName="MPGVB5" />
+          <ScalarProperty Name="MPGVS1" ColumnName="MPGVS1" />
+          <ScalarProperty Name="MPGVS2" ColumnName="MPGVS2" />
+          <ScalarProperty Name="MPGVS3" ColumnName="MPGVS3" />
+          <ScalarProperty Name="MPGVS4" ColumnName="MPGVS4" />
+          <ScalarProperty Name="MPGVS5" ColumnName="MPGVS5" />
+          <ScalarProperty Name="ResType" ColumnName="ResType" />
+          <ScalarProperty Name="ElecConnections" ColumnName="ElecConnections" />
+          <ScalarProperty Name="SoundTestFlowAndPressure" ColumnName="SoundTestFlowAndPressure" />
+          <ScalarProperty Name="SoundTestFlow" ColumnName="SoundTestFlow" />
+          <ScalarProperty Name="SoundTestDeadhead" ColumnName="SoundTestDeadhead" />
+          <ScalarProperty Name="VibrationTestFlowAndPressure" ColumnName="VibrationTestFlowAndPressure" />
+          <ScalarProperty Name="VibrationTestFlow" ColumnName="VibrationTestFlow" />
+          <ScalarProperty Name="VibrationTestDeadhead" ColumnName="VibrationTestDeadhead" />
+          <ScalarProperty Name="VibrationNumTestPoints" ColumnName="VibrationNumTestPoints" />
+          <ScalarProperty Name="CustomerTitleBlock" ColumnName="CustomerTitleBlock" />
+          <ScalarProperty Name="SpecialDimensioning" ColumnName="SpecialDimensioning" />
+          <ScalarProperty Name="ResStyle" ColumnName="ResStyle" />
+          <ScalarProperty Name="ComplexSchematic" ColumnName="ComplexSchematic" />
+          <ScalarProperty Name="LabelType" ColumnName="LabelType" />
+          <ScalarProperty Name="CustomerWitness" ColumnName="CustomerWitness" />
+          <ScalarProperty Name="CableType" ColumnName="CableType" />
+          <ScalarProperty Name="CableExplosion" ColumnName="CableExplosion" />
+          <ScalarProperty Name="CableQty" ColumnName="CableQty" />
+          <ScalarProperty Name="FittingType" ColumnName="FittingType" />
+          <ScalarProperty Name="Fitting1Qty" ColumnName="Fitting1Qty" />
+          <ScalarProperty Name="Fitting2Qty" ColumnName="Fitting2Qty" />
+          <ScalarProperty Name="Fitting3Qty" ColumnName="Fitting3Qty" />
+          <ScalarProperty Name="Fitting4Qty" ColumnName="Fitting4Qty" />
+          <ScalarProperty Name="PanelMtdValvesStd" ColumnName="PanelMtdValvesStd" />
+          <ScalarProperty Name="PanelMtdValvesNonStd" ColumnName="PanelMtdValvesNonStd" />
+          <ScalarProperty Name="ElecBoxStd" ColumnName="ElecBoxStd" />
+          <ScalarProperty Name="ElecBoxNonStd" ColumnName="ElecBoxNonStd" />
+          <ScalarProperty Name="auto" ColumnName="auto" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="SubassemblyID" ColumnName="SubassemblyID" />
+          <ScalarProperty Name="Adjustengineering" ColumnName="Adjustengineering" />
+          <ScalarProperty Name="Adjustdesign" ColumnName="Adjustdesign" />
+          <ScalarProperty Name="AdjustWiringDesign" ColumnName="AdjustWiringDesign" />
+          <ScalarProperty Name="AdjustPickParts" ColumnName="AdjustPickParts" />
+          <ScalarProperty Name="Adjustwiring" ColumnName="Adjustwiring" />
+          <ScalarProperty Name="Adjustwelding" ColumnName="Adjustwelding" />
+          <ScalarProperty Name="Adjusttest" ColumnName="Adjusttest" />
+          <ScalarProperty Name="AdjustShippingTag" ColumnName="AdjustShippingTag" />
+          <ScalarProperty Name="Adjustpaint" ColumnName="Adjustpaint" />
+          <ScalarProperty Name="Adjustdocumentation" ColumnName="Adjustdocumentation" />
+          <ScalarProperty Name="Adjustassembly" ColumnName="Adjustassembly" />
+          <ScalarProperty Name="AdjustControlsEngineering" ColumnName="AdjustControlsEngineering" />
+          <ScalarProperty Name="AdjustProgramming" ColumnName="AdjustProgramming" />
+          <ScalarProperty Name="AdjustIM_Machining_Man" ColumnName="AdjustIM_Machining_Man" />
+          <ScalarProperty Name="AdjustIM_Machining_Cnc" ColumnName="AdjustIM_Machining_Cnc" />
+          <ScalarProperty Name="AdjustAssemblyHoursNonSAPPiping" ColumnName="AdjustAssemblyHoursNonSAPPiping" />
+          <ScalarProperty Name="AdjustEngineeringHoursNonSAPPiping" ColumnName="AdjustEngineeringHoursNonSAPPiping" />
+          <ScalarProperty Name="AdjustDesignHoursNonSAPPiping" ColumnName="AdjustDesignHoursNonSAPPiping" />
+          <ScalarProperty Name="AdjustPaintHoursNonSAPPiping" ColumnName="AdjustPaintHoursNonSAPPiping" />
+          <ScalarProperty Name="AdjustWeldingHoursNonSAPPiping" ColumnName="AdjustWeldingHoursNonSAPPiping" />
+          <ScalarProperty Name="AdjustDescriptionDetails" ColumnName="AdjustDescriptionDetails" />
+          <ScalarProperty Name="NonAdjustDescriptionDetails" ColumnName="NonAdjustDescriptionDetails" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_labor_variables">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_labor_variables">
+        <MappingFragment StoreEntitySet="T_labor_variables">
+          <ScalarProperty Name="auto" ColumnName="auto" />
+          <ScalarProperty Name="Engineering" ColumnName="Engineering" />
+          <ScalarProperty Name="design" ColumnName="design" />
+          <ScalarProperty Name="assembly" ColumnName="assembly" />
+          <ScalarProperty Name="wiring" ColumnName="wiring" />
+          <ScalarProperty Name="welding" ColumnName="welding" />
+          <ScalarProperty Name="test" ColumnName="test" />
+          <ScalarProperty Name="paint" ColumnName="paint" />
+          <ScalarProperty Name="documentation" ColumnName="documentation" />
+          <ScalarProperty Name="WiringDesign" ColumnName="WiringDesign" />
+          <ScalarProperty Name="PickParts" ColumnName="PickParts" />
+          <ScalarProperty Name="ShippingTag" ColumnName="ShippingTag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_LaborCostFactors">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_LaborCostFactors">
+        <MappingFragment StoreEntitySet="T_LaborCostFactors">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Factor" ColumnName="Factor" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="LaborModule" ColumnName="LaborModule" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_LaborCostFactors_ShippableAssembly">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_LaborCostFactors_ShippableAssembly">
+        <MappingFragment StoreEntitySet="T_LaborCostFactors_ShippableAssembly">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ShippableAssemblyId" ColumnName="ShippableAssemblyId" />
+          <ScalarProperty Name="LaborCostFactorId" ColumnName="LaborCostFactorId" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_MotorHorsePower">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_MotorHorsePower">
+        <MappingFragment StoreEntitySet="T_MotorHorsePower">
+          <ScalarProperty Name="HorsePpowerID" ColumnName="HorsePpowerID" />
+          <ScalarProperty Name="Horse_Power" ColumnName="Horse Power" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_MotorManufacturer">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_MotorManufacturer">
+        <MappingFragment StoreEntitySet="T_MotorManufacturer">
+          <ScalarProperty Name="MotorManufacturerID" ColumnName="MotorManufacturerID" />
+          <ScalarProperty Name="Manufacturer_Name" ColumnName="Manufacturer Name" />
+          <ScalarProperty Name="Manufacturer_description" ColumnName="Manufacturer description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_MotorRPM">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_MotorRPM">
+        <MappingFragment StoreEntitySet="T_MotorRPM">
+          <ScalarProperty Name="RPMID" ColumnName="RPMID" />
+          <ScalarProperty Name="RPM" ColumnName="RPM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_MotorVoltage">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_MotorVoltage">
+        <MappingFragment StoreEntitySet="T_MotorVoltage">
+          <ScalarProperty Name="MotorVoltageID" ColumnName="MotorVoltageID" />
+          <ScalarProperty Name="Voltage" ColumnName="Voltage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Piping_Clamp">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Piping_Clamp">
+        <MappingFragment StoreEntitySet="T_Piping_Clamp">
+          <ScalarProperty Name="Clamp_ID" ColumnName="Clamp_ID" />
+          <ScalarProperty Name="Size_Min" ColumnName="Size_Min" />
+          <ScalarProperty Name="Size_Max" ColumnName="Size_Max" />
+          <ScalarProperty Name="Assembly_hrs" ColumnName="Assembly_hrs" />
+          <ScalarProperty Name="flgStatus" ColumnName="flgStatus" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Piping_Fitting">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Piping_Fitting">
+        <MappingFragment StoreEntitySet="T_Piping_Fitting">
+          <ScalarProperty Name="PipeFitting_ID" ColumnName="PipeFitting_ID" />
+          <ScalarProperty Name="Size_Min" ColumnName="Size_Min" />
+          <ScalarProperty Name="Size_Max" ColumnName="Size_Max" />
+          <ScalarProperty Name="Assembly_hrs" ColumnName="Assembly_hrs" />
+          <ScalarProperty Name="flgStatus" ColumnName="flgStatus" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Piping_Flang">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Piping_Flang">
+        <MappingFragment StoreEntitySet="T_Piping_Flang">
+          <ScalarProperty Name="PipeFlang_ID" ColumnName="PipeFlang_ID" />
+          <ScalarProperty Name="Size_Min" ColumnName="Size_Min" />
+          <ScalarProperty Name="Size_Max" ColumnName="Size_Max" />
+          <ScalarProperty Name="Assembly_hrs" ColumnName="Assembly_hrs" />
+          <ScalarProperty Name="flgStatus" ColumnName="flgStatus" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Piping_Hour_Details">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Piping_Hour_Details">
+        <MappingFragment StoreEntitySet="T_Piping_Hour_Details">
+          <ScalarProperty Name="Piping_hrs_ID" ColumnName="Piping_hrs_ID" />
+          <ScalarProperty Name="Hour_Type" ColumnName="Hour_Type" />
+          <ScalarProperty Name="Hour_Title" ColumnName="Hour_Title" />
+          <ScalarProperty Name="Hour_Description" ColumnName="Hour_Description" />
+          <ScalarProperty Name="Hour_Value" ColumnName="Hour_Value" />
+          <ScalarProperty Name="flgStatus" ColumnName="flgStatus" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Piping_Kick">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Piping_Kick">
+        <MappingFragment StoreEntitySet="T_Piping_Kick">
+          <ScalarProperty Name="kick_ID" ColumnName="kick_ID" />
+          <ScalarProperty Name="Conduit" ColumnName="Conduit" />
+          <ScalarProperty Name="Size_Min" ColumnName="Size_Min" />
+          <ScalarProperty Name="Size_Max" ColumnName="Size_Max" />
+          <ScalarProperty Name="Assembly_hrs" ColumnName="Assembly_hrs" />
+          <ScalarProperty Name="flgStatus" ColumnName="flgStatus" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Piping_NPT_PipeConn">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Piping_NPT_PipeConn">
+        <MappingFragment StoreEntitySet="T_Piping_NPT_PipeConn">
+          <ScalarProperty Name="NPT_PipeConn_ID" ColumnName="NPT_PipeConn_ID" />
+          <ScalarProperty Name="Size_Min" ColumnName="Size_Min" />
+          <ScalarProperty Name="Size_Max" ColumnName="Size_Max" />
+          <ScalarProperty Name="Assembly_hrs" ColumnName="Assembly_hrs" />
+          <ScalarProperty Name="flgStatus" ColumnName="flgStatus" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Piping_PipeConnect">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Piping_PipeConnect">
+        <MappingFragment StoreEntitySet="T_Piping_PipeConnect">
+          <ScalarProperty Name="PipeConnect_ID" ColumnName="PipeConnect_ID" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="Joint" ColumnName="Joint" />
+          <ScalarProperty Name="Schedule" ColumnName="Schedule" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Assembly_hrs" ColumnName="Assembly_hrs" />
+          <ScalarProperty Name="Welding_hrs" ColumnName="Welding_hrs" />
+          <ScalarProperty Name="flgStatus" ColumnName="flgStatus" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Piping_ThrededFitting">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Piping_ThrededFitting">
+        <MappingFragment StoreEntitySet="T_Piping_ThrededFitting">
+          <ScalarProperty Name="PipeTFitting_ID" ColumnName="PipeTFitting_ID" />
+          <ScalarProperty Name="Size_Min" ColumnName="Size_Min" />
+          <ScalarProperty Name="Size_Max" ColumnName="Size_Max" />
+          <ScalarProperty Name="Assembly_hrs" ColumnName="Assembly_hrs" />
+          <ScalarProperty Name="flgStatus" ColumnName="flgStatus" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Piping_TubeConnect">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Piping_TubeConnect">
+        <MappingFragment StoreEntitySet="T_Piping_TubeConnect">
+          <ScalarProperty Name="TubeConnect_ID" ColumnName="TubeConnect_ID" />
+          <ScalarProperty Name="Joint" ColumnName="Joint" />
+          <ScalarProperty Name="Size_Min" ColumnName="Size_Min" />
+          <ScalarProperty Name="Size_Max" ColumnName="Size_Max" />
+          <ScalarProperty Name="Assembly_hrs" ColumnName="Assembly_hrs" />
+          <ScalarProperty Name="flgStatus" ColumnName="flgStatus" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_PipingComponent_Values">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_PipingComponent_Values">
+        <MappingFragment StoreEntitySet="T_PipingComponent_Values">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Component_ID" ColumnName="Component_ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="flgActive" ColumnName="flgActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_PipingComponents">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_PipingComponents">
+        <MappingFragment StoreEntitySet="T_PipingComponents">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Component_Name" ColumnName="Component_Name" />
+          <ScalarProperty Name="flgActive" ColumnName="flgActive" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_PipingLabor_Data">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_PipingLabor_Data">
+        <MappingFragment StoreEntitySet="T_PipingLabor_Data">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="QN" ColumnName="QN" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="subassemblyid" ColumnName="subassemblyid" />
+          <ScalarProperty Name="Conduit" ColumnName="Conduit" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="Joint" ColumnName="Joint" />
+          <ScalarProperty Name="Paint_Details" ColumnName="Paint_Details" />
+          <ScalarProperty Name="Method" ColumnName="Method" />
+          <ScalarProperty Name="component" ColumnName="component" />
+          <ScalarProperty Name="size" ColumnName="size" />
+          <ScalarProperty Name="schedule" ColumnName="schedule" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="PackageQty" ColumnName="PackageQty" />
+          <ScalarProperty Name="PartQty" ColumnName="PartQty" />
+          <ScalarProperty Name="PN" ColumnName="PN" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="TotalCost" ColumnName="TotalCost" />
+          <ScalarProperty Name="PipingPackageID" ColumnName="PipingPackageID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_PipingLaborConfiguration">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_PipingLaborConfiguration">
+        <MappingFragment StoreEntitySet="T_PipingLaborConfiguration">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Conduit" ColumnName="Conduit" />
+          <ScalarProperty Name="Component" ColumnName="Component" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="Joint" ColumnName="Joint" />
+          <ScalarProperty Name="Schedule" ColumnName="Schedule" />
+          <ScalarProperty Name="MinSize" ColumnName="MinSize" />
+          <ScalarProperty Name="MaxSize" ColumnName="MaxSize" />
+          <ScalarProperty Name="AssemblyLaborHours" ColumnName="AssemblyLaborHours" />
+          <ScalarProperty Name="WeldingLaborHours" ColumnName="WeldingLaborHours" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_PipingLaborForCSSS">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_PipingLaborForCSSS">
+        <MappingFragment StoreEntitySet="T_PipingLaborForCSSS">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Schedule" ColumnName="Schedule" />
+          <ScalarProperty Name="MinSize" ColumnName="MinSize" />
+          <ScalarProperty Name="MaxSize" ColumnName="MaxSize" />
+          <ScalarProperty Name="AssemblyHours" ColumnName="AssemblyHours" />
+          <ScalarProperty Name="WeldingHours" ColumnName="WeldingHours" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_PipingLaborPaintRequirement">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_PipingLaborPaintRequirement">
+        <MappingFragment StoreEntitySet="T_PipingLaborPaintRequirement">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PaintRequirement" ColumnName="PaintRequirement" />
+          <ScalarProperty Name="Conduit" ColumnName="Conduit" />
+          <ScalarProperty Name="PaintLaborHours" ColumnName="PaintLaborHours" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_PipingMaterial">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_PipingMaterial">
+        <MappingFragment StoreEntitySet="T_PipingMaterial">
+          <ScalarProperty Name="PipingMaterialID" ColumnName="PipingMaterialID" />
+          <ScalarProperty Name="PipingMaterial" ColumnName="PipingMaterial" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_PipingSchedule">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_PipingSchedule">
+        <MappingFragment StoreEntitySet="T_PipingSchedule">
+          <ScalarProperty Name="PipingScheduleID" ColumnName="PipingScheduleID" />
+          <ScalarProperty Name="Piping_Schedule" ColumnName="Piping Schedule" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_PipingSchemMapping">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_PipingSchemMapping">
+        <MappingFragment StoreEntitySet="T_PipingSchemMapping">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Piping_Id" ColumnName="Piping_Id" />
+          <ScalarProperty Name="Units" ColumnName="Units" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="Joint" ColumnName="Joint" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Schedule" ColumnName="Schedule" />
+          <ScalarProperty Name="Schem_Symbol" ColumnName="Schem_Symbol" />
+          <ScalarProperty Name="Schem_Component" ColumnName="Schem_Component" />
+          <ScalarProperty Name="IsSelected" ColumnName="IsSelected" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="Conduit" ColumnName="Conduit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_PipingSize">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_PipingSize">
+        <MappingFragment StoreEntitySet="T_PipingSize">
+          <ScalarProperty Name="PipingSizeID" ColumnName="PipingSizeID" />
+          <ScalarProperty Name="Piping_Size" ColumnName="Piping Size" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Product">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Product">
+        <MappingFragment StoreEntitySet="T_Product">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_qts_All_SAP_Motors">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_qts_All_SAP_Motors">
+        <MappingFragment StoreEntitySet="T_qts_All_SAP_Motors">
+          <ScalarProperty Name="PN" ColumnName="PN" />
+          <ScalarProperty Name="MaterialNumber" ColumnName="MaterialNumber" />
+          <ScalarProperty Name="StandardPrice" ColumnName="StandardPrice" />
+          <ScalarProperty Name="MG2" ColumnName="MG2" />
+          <ScalarProperty Name="ClassCode" ColumnName="ClassCode" />
+          <ScalarProperty Name="QuoteDescription" ColumnName="QuoteDescription" />
+          <ScalarProperty Name="Info1" ColumnName="Info1" />
+          <ScalarProperty Name="Info2" ColumnName="Info2" />
+          <ScalarProperty Name="Info3" ColumnName="Info3" />
+          <ScalarProperty Name="Info4" ColumnName="Info4" />
+          <ScalarProperty Name="Info5" ColumnName="Info5" />
+          <ScalarProperty Name="Info6" ColumnName="Info6" />
+          <ScalarProperty Name="Info7" ColumnName="Info7" />
+          <ScalarProperty Name="Info8" ColumnName="Info8" />
+          <ScalarProperty Name="Info9" ColumnName="Info9" />
+          <ScalarProperty Name="Info10" ColumnName="Info10" />
+          <ScalarProperty Name="MotorId" ColumnName="MotorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Quote_Details">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Quote_Details">
+        <MappingFragment StoreEntitySet="T_Quote_Details">
+          <ScalarProperty Name="Quote_UserId" ColumnName="Quote_UserId" />
+          <ScalarProperty Name="Quote_auto" ColumnName="Quote_auto" />
+          <ScalarProperty Name="Application_Engineer" ColumnName="Application_Engineer" />
+          <ScalarProperty Name="Sale_Engineer" ColumnName="Sale_Engineer" />
+          <ScalarProperty Name="Distribution_Channel" ColumnName="Distribution_Channel" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Cost_Approver" ColumnName="Cost_Approver" />
+          <ScalarProperty Name="CA_Action_Date" ColumnName="CA_Action_Date" />
+          <ScalarProperty Name="CA_Comment" ColumnName="CA_Comment" />
+          <ScalarProperty Name="Sell_Price_Approver" ColumnName="Sell_Price_Approver" />
+          <ScalarProperty Name="SPA_Action_Date" ColumnName="SPA_Action_Date" />
+          <ScalarProperty Name="SPA_Comment" ColumnName="SPA_Comment" />
+          <ScalarProperty Name="Additional_SP_Approver" ColumnName="Additional_SP_Approver" />
+          <ScalarProperty Name="ASPA_Action_Date" ColumnName="ASPA_Action_Date" />
+          <ScalarProperty Name="ASPA_Comment" ColumnName="ASPA_Comment" />
+          <ScalarProperty Name="Approval_Levels" ColumnName="Approval_Levels" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="IsPMEffort" ColumnName="IsPMEffort" />
+          <ScalarProperty Name="PMEffort" ColumnName="PMEffort" />
+          <ScalarProperty Name="IsCommission" ColumnName="IsCommission" />
+          <ScalarProperty Name="Commission" ColumnName="Commission" />
+          <ScalarProperty Name="PreviousStatusId" ColumnName="PreviousStatusId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Quote_Parts">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Quote_Parts">
+        <MappingFragment StoreEntitySet="T_Quote_Parts">
+          <ScalarProperty Name="sub" ColumnName="sub" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="LI" ColumnName="LI" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="PN" ColumnName="PN" />
+          <ScalarProperty Name="TP" ColumnName="TP" />
+          <ScalarProperty Name="descr" ColumnName="descr" />
+          <ScalarProperty Name="net_cost" ColumnName="net_cost" />
+          <ScalarProperty Name="cost" ColumnName="cost" />
+          <ScalarProperty Name="part_markup" ColumnName="part_markup" />
+          <ScalarProperty Name="revision" ColumnName="revision" />
+          <ScalarProperty Name="auto" ColumnName="auto" />
+          <ScalarProperty Name="QN" ColumnName="QN" />
+          <ScalarProperty Name="PipingWelding" ColumnName="PipingWelding" />
+          <ScalarProperty Name="PipingAssembly" ColumnName="PipingAssembly" />
+          <ScalarProperty Name="materialoverhead" ColumnName="materialoverhead" />
+          <ScalarProperty Name="plantadministration" ColumnName="plantadministration" />
+          <ScalarProperty Name="manufacturingcost" ColumnName="manufacturingcost" />
+          <ScalarProperty Name="sga" ColumnName="sga" />
+          <ScalarProperty Name="riskfactor" ColumnName="riskfactor" />
+          <ScalarProperty Name="sellprice" ColumnName="sellprice" />
+          <ScalarProperty Name="CopyFrom" ColumnName="CopyFrom" />
+          <ScalarProperty Name="UserDesc" ColumnName="UserDesc" />
+          <ScalarProperty Name="ShippableAssemblyId" ColumnName="ShippableAssemblyId" />
+          <ScalarProperty Name="SubOrder" ColumnName="SubOrder" />
+          <ScalarProperty Name="IsCostChanged" ColumnName="IsCostChanged" />
+          <ScalarProperty Name="InternalNote" ColumnName="InternalNote" />
+          <ScalarProperty Name="IsCostIncrease" ColumnName="IsCostIncrease" />
+          <ScalarProperty Name="SAPCost" ColumnName="SAPCost" />
+          <ScalarProperty Name="SAPNetCost" ColumnName="SAPNetCost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Quote_Sections">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Quote_Sections">
+        <MappingFragment StoreEntitySet="T_Quote_Sections">
+          <ScalarProperty Name="QN" ColumnName="QN" />
+          <ScalarProperty Name="section" ColumnName="section" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="descr" ColumnName="descr" />
+          <ScalarProperty Name="section_markup" ColumnName="section_markup" />
+          <ScalarProperty Name="part_number" ColumnName="part_number" />
+          <ScalarProperty Name="sap_descr" ColumnName="sap_descr" />
+          <ScalarProperty Name="revision" ColumnName="revision" />
+          <ScalarProperty Name="section_cost" ColumnName="section_cost" />
+          <ScalarProperty Name="sect_net_cost" ColumnName="sect_net_cost" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="DefaultPartMargin" ColumnName="DefaultPartMargin" />
+          <ScalarProperty Name="plantadministration" ColumnName="plantadministration" />
+          <ScalarProperty Name="manufacturingcost" ColumnName="manufacturingcost" />
+          <ScalarProperty Name="sga" ColumnName="sga" />
+          <ScalarProperty Name="riskfactor" ColumnName="riskfactor" />
+          <ScalarProperty Name="sellprice" ColumnName="sellprice" />
+          <ScalarProperty Name="labor_tot" ColumnName="labor_tot" />
+          <ScalarProperty Name="commission" ColumnName="commission" />
+          <ScalarProperty Name="materialoverhead" ColumnName="materialoverhead" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="auto" ColumnName="auto" />
+          <ScalarProperty Name="SectionOrder" ColumnName="SectionOrder" />
+          <ScalarProperty Name="RiskFactorPercentage" ColumnName="RiskFactorPercentage" />
+          <ScalarProperty Name="SGAPercentage" ColumnName="SGAPercentage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Quote_Sections_old">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Quote_Sections_old">
+        <MappingFragment StoreEntitySet="T_Quote_Sections_old">
+          <ScalarProperty Name="QN" ColumnName="QN" />
+          <ScalarProperty Name="section" ColumnName="section" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="descr" ColumnName="descr" />
+          <ScalarProperty Name="section_markup" ColumnName="section_markup" />
+          <ScalarProperty Name="part_number" ColumnName="part_number" />
+          <ScalarProperty Name="sap_descr" ColumnName="sap_descr" />
+          <ScalarProperty Name="revision" ColumnName="revision" />
+          <ScalarProperty Name="section_cost" ColumnName="section_cost" />
+          <ScalarProperty Name="sect_net_cost" ColumnName="sect_net_cost" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="DefaultPartMargin" ColumnName="DefaultPartMargin" />
+          <ScalarProperty Name="plantadministration" ColumnName="plantadministration" />
+          <ScalarProperty Name="manufacturingcost" ColumnName="manufacturingcost" />
+          <ScalarProperty Name="sga" ColumnName="sga" />
+          <ScalarProperty Name="riskfactor" ColumnName="riskfactor" />
+          <ScalarProperty Name="sellprice" ColumnName="sellprice" />
+          <ScalarProperty Name="labor_tot" ColumnName="labor_tot" />
+          <ScalarProperty Name="commission" ColumnName="commission" />
+          <ScalarProperty Name="materialoverhead" ColumnName="materialoverhead" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="auto" ColumnName="auto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Quote_Sub">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Quote_Sub">
+        <MappingFragment StoreEntitySet="T_Quote_Sub">
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="LI" ColumnName="LI" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="pn" ColumnName="pn" />
+          <ScalarProperty Name="tp" ColumnName="tp" />
+          <ScalarProperty Name="descr" ColumnName="descr" />
+          <ScalarProperty Name="net_cost" ColumnName="net_cost" />
+          <ScalarProperty Name="cost" ColumnName="cost" />
+          <ScalarProperty Name="part_markup" ColumnName="part_markup" />
+          <ScalarProperty Name="revision" ColumnName="revision" />
+          <ScalarProperty Name="auto" ColumnName="auto" />
+          <ScalarProperty Name="sub_descr" ColumnName="sub_descr" />
+          <ScalarProperty Name="QN" ColumnName="QN" />
+          <ScalarProperty Name="PipingWelding" ColumnName="PipingWelding" />
+          <ScalarProperty Name="PipingAssembly" ColumnName="PipingAssembly" />
+          <ScalarProperty Name="UserDesc" ColumnName="UserDesc" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="IsCostChanged" ColumnName="IsCostChanged" />
+          <ScalarProperty Name="InternalNote" ColumnName="InternalNote" />
+          <ScalarProperty Name="IsCostIncrease" ColumnName="IsCostIncrease" />
+          <ScalarProperty Name="SAPCost" ColumnName="SAPCost" />
+          <ScalarProperty Name="SAPNetCost" ColumnName="SAPNetCost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Quotes">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Quotes">
+        <MappingFragment StoreEntitySet="T_Quotes">
+          <ScalarProperty Name="auto" ColumnName="auto" />
+          <ScalarProperty Name="Quote_number" ColumnName="Quote_number" />
+          <ScalarProperty Name="Quote_Revision" ColumnName="Quote_Revision" />
+          <ScalarProperty Name="quote_expectedorder_date" ColumnName="quote_expectedorder_date" />
+          <ScalarProperty Name="quote_rec_date" ColumnName="quote_rec_date" />
+          <ScalarProperty Name="quote_due_date" ColumnName="quote_due_date" />
+          <ScalarProperty Name="quote_issued_date" ColumnName="quote_issued_date" />
+          <ScalarProperty Name="sales_office" ColumnName="sales_office" />
+          <ScalarProperty Name="sales_group" ColumnName="sales_group" />
+          <ScalarProperty Name="DistributorId" ColumnName="DistributorId" />
+          <ScalarProperty Name="cust_sap_number" ColumnName="cust_sap_number" />
+          <ScalarProperty Name="contact_salutation" ColumnName="contact_salutation" />
+          <ScalarProperty Name="contact_fname" ColumnName="contact_fname" />
+          <ScalarProperty Name="contact_lname" ColumnName="contact_lname" />
+          <ScalarProperty Name="contact_telbus" ColumnName="contact_telbus" />
+          <ScalarProperty Name="contact_telmobile" ColumnName="contact_telmobile" />
+          <ScalarProperty Name="contact_telfax" ColumnName="contact_telfax" />
+          <ScalarProperty Name="contact_email" ColumnName="contact_email" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="est_price" ColumnName="est_price" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="LineItemIncrement" ColumnName="LineItemIncrement" />
+          <ScalarProperty Name="TechPositionIncrement" ColumnName="TechPositionIncrement" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="ReasonDetails" ColumnName="ReasonDetails" />
+          <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
+          <ScalarProperty Name="SalesOrderNumber" ColumnName="SalesOrderNumber" />
+          <ScalarProperty Name="CustomerType" ColumnName="CustomerType" />
+          <ScalarProperty Name="flgCustomBillCust" ColumnName="flgCustomBillCust" />
+          <ScalarProperty Name="flgCustomOEMUser" ColumnName="flgCustomOEMUser" />
+          <ScalarProperty Name="ProbabilityPO" ColumnName="ProbabilityPO" />
+          <ScalarProperty Name="ProbabilityEOD" ColumnName="ProbabilityEOD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Quotes_old">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Quotes_old">
+        <MappingFragment StoreEntitySet="T_Quotes_old">
+          <ScalarProperty Name="auto" ColumnName="auto" />
+          <ScalarProperty Name="Quote_number" ColumnName="Quote_number" />
+          <ScalarProperty Name="quoter" ColumnName="quoter" />
+          <ScalarProperty Name="quote_started_date" ColumnName="quote_started_date" />
+          <ScalarProperty Name="quote_rec_date" ColumnName="quote_rec_date" />
+          <ScalarProperty Name="quote_due_date" ColumnName="quote_due_date" />
+          <ScalarProperty Name="quote_issued_date" ColumnName="quote_issued_date" />
+          <ScalarProperty Name="sales_office" ColumnName="sales_office" />
+          <ScalarProperty Name="sales_group" ColumnName="sales_group" />
+          <ScalarProperty Name="cust_name" ColumnName="cust_name" />
+          <ScalarProperty Name="cust_street" ColumnName="cust_street" />
+          <ScalarProperty Name="cust_city" ColumnName="cust_city" />
+          <ScalarProperty Name="cust_zip" ColumnName="cust_zip" />
+          <ScalarProperty Name="cust_state" ColumnName="cust_state" />
+          <ScalarProperty Name="cust_country" ColumnName="cust_country" />
+          <ScalarProperty Name="cust_sap_number" ColumnName="cust_sap_number" />
+          <ScalarProperty Name="contact_salutation" ColumnName="contact_salutation" />
+          <ScalarProperty Name="contact_fname" ColumnName="contact_fname" />
+          <ScalarProperty Name="contact_lname" ColumnName="contact_lname" />
+          <ScalarProperty Name="contact_telbus" ColumnName="contact_telbus" />
+          <ScalarProperty Name="contact_telmobile" ColumnName="contact_telmobile" />
+          <ScalarProperty Name="contact_telfax" ColumnName="contact_telfax" />
+          <ScalarProperty Name="contact_email" ColumnName="contact_email" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="est_price" ColumnName="est_price" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="LineItemIncrement" ColumnName="LineItemIncrement" />
+          <ScalarProperty Name="TechPositionIncrement" ColumnName="TechPositionIncrement" />
+          <ScalarProperty Name="Approver" ColumnName="Approver" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ApproverComments" ColumnName="ApproverComments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_ResInfo">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_ResInfo">
+        <MappingFragment StoreEntitySet="T_ResInfo">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ResType" ColumnName="ResType" />
+          <ScalarProperty Name="PartsListTime" ColumnName="PartsListTime" />
+          <ScalarProperty Name="PickPartsTime" ColumnName="PickPartsTime" />
+          <ScalarProperty Name="WiringBasicTime" ColumnName="WiringBasicTime" />
+          <ScalarProperty Name="BasicAssemblyTime" ColumnName="BasicAssemblyTime" />
+          <ScalarProperty Name="DesignHours" ColumnName="DesignHours" />
+          <ScalarProperty Name="AssemblyDrawingMinutes" ColumnName="AssemblyDrawingMinutes" />
+          <ScalarProperty Name="SchematicReview" ColumnName="SchematicReview" />
+          <ScalarProperty Name="ComponentAssemblyMultiplier" ColumnName="ComponentAssemblyMultiplier" />
+          <ScalarProperty Name="BasicPaintTime" ColumnName="BasicPaintTime" />
+          <ScalarProperty Name="ReservoirCapacityInGallons" ColumnName="ReservoirCapacityInGallons" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Roles">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Roles">
+        <MappingFragment StoreEntitySet="T_Roles">
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="RoleDescription" ColumnName="RoleDescription" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_SalesGroup">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_SalesGroup">
+        <MappingFragment StoreEntitySet="T_SalesGroup">
+          <ScalarProperty Name="SalesGroupID" ColumnName="SalesGroupID" />
+          <ScalarProperty Name="SalesGroupName" ColumnName="SalesGroupName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_SalesOffice">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_SalesOffice">
+        <MappingFragment StoreEntitySet="T_SalesOffice">
+          <ScalarProperty Name="SalesOfficeID" ColumnName="SalesOfficeID" />
+          <ScalarProperty Name="SalesOfficeName" ColumnName="SalesOfficeName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_ShippableAssembly">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_ShippableAssembly">
+        <MappingFragment StoreEntitySet="T_ShippableAssembly">
+          <ScalarProperty Name="ShippableAssemblyID" ColumnName="ShippableAssemblyID" />
+          <ScalarProperty Name="ShippableAssemblyName" ColumnName="ShippableAssemblyName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="flgActive" ColumnName="flgActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_status">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_status">
+        <MappingFragment StoreEntitySet="T_status">
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+          <ScalarProperty Name="StatusDescription" ColumnName="StatusDescription" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_UserRoles">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_UserRoles">
+        <MappingFragment StoreEntitySet="T_UserRoles">
+          <ScalarProperty Name="UserRoleId" ColumnName="UserRoleId" />
+          <ScalarProperty Name="AppRoleId" ColumnName="AppRoleId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Users">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Users">
+        <MappingFragment StoreEntitySet="T_Users">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Domain" ColumnName="Domain" />
+          <ScalarProperty Name="NTID" ColumnName="NTID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Contact_Information">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Contact_Information">
+        <MappingFragment StoreEntitySet="T_Contact_Information">
+          <ScalarProperty Name="Auto" ColumnName="Auto" />
+          <ScalarProperty Name="Quote_Auto" ColumnName="Quote_Auto" />
+          <ScalarProperty Name="contact_salutation" ColumnName="contact_salutation" />
+          <ScalarProperty Name="contact_fname" ColumnName="contact_fname" />
+          <ScalarProperty Name="contact_lname" ColumnName="contact_lname" />
+          <ScalarProperty Name="contact_telbus" ColumnName="contact_telbus" />
+          <ScalarProperty Name="contact_telmobile" ColumnName="contact_telmobile" />
+          <ScalarProperty Name="contact_telfax" ColumnName="contact_telfax" />
+          <ScalarProperty Name="contact_email" ColumnName="contact_email" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Custom_Customers">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Custom_Customers">
+        <MappingFragment StoreEntitySet="T_Custom_Customers">
+          <ScalarProperty Name="Auto" ColumnName="Auto" />
+          <ScalarProperty Name="Quote_Auto" ColumnName="Quote_Auto" />
+          <ScalarProperty Name="Customer_Type" ColumnName="Customer_Type" />
+          <ScalarProperty Name="Cust_Name" ColumnName="Cust_Name" />
+          <ScalarProperty Name="Cust_Street" ColumnName="Cust_Street" />
+          <ScalarProperty Name="Cust_City" ColumnName="Cust_City" />
+          <ScalarProperty Name="Cust_Zip" ColumnName="Cust_Zip" />
+          <ScalarProperty Name="Cust_State" ColumnName="Cust_State" />
+          <ScalarProperty Name="Cust_Country" ColumnName="Cust_Country" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="IsValidCustType" ColumnName="IsValidCustType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Flangetype">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Flangetype">
+        <MappingFragment StoreEntitySet="T_Flangetype">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Flange_type" ColumnName="Flange type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_LABOR_DATA_Tmp">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_LABOR_DATA_Tmp">
+        <MappingFragment StoreEntitySet="T_LABOR_DATA_Tmp">
+          <ScalarProperty Name="QN" ColumnName="QN" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="DTMPQTY" ColumnName="DTMPQTY" />
+          <ScalarProperty Name="DTMEQTY" ColumnName="DTMEQTY" />
+          <ScalarProperty Name="TDRC" ColumnName="TDRC" />
+          <ScalarProperty Name="TDNC" ColumnName="TDNC" />
+          <ScalarProperty Name="LDLQQTY" ColumnName="LDLQQTY" />
+          <ScalarProperty Name="COMPACCPUA" ColumnName="COMPACCPUA" />
+          <ScalarProperty Name="COMPACCSPEC" ColumnName="COMPACCSPEC" />
+          <ScalarProperty Name="COMBREPUA" ColumnName="COMBREPUA" />
+          <ScalarProperty Name="COMBRESPEC" ColumnName="COMBRESPEC" />
+          <ScalarProperty Name="COMCLEPUA" ColumnName="COMCLEPUA" />
+          <ScalarProperty Name="COMCLESPEC" ColumnName="COMCLESPEC" />
+          <ScalarProperty Name="COMFILPUA" ColumnName="COMFILPUA" />
+          <ScalarProperty Name="COMFILSPEC" ColumnName="COMFILSPEC" />
+          <ScalarProperty Name="COMFLSWPUA" ColumnName="COMFLSWPUA" />
+          <ScalarProperty Name="COMFLSWSPEC" ColumnName="COMFLSWSPEC" />
+          <ScalarProperty Name="COMGUAPUA" ColumnName="COMGUAPUA" />
+          <ScalarProperty Name="COMGUASPEC" ColumnName="COMGUASPEC" />
+          <ScalarProperty Name="COMGPPUA" ColumnName="COMGPPUA" />
+          <ScalarProperty Name="COMGPSPEC" ColumnName="COMGPSPEC" />
+          <ScalarProperty Name="COMHEAPUA" ColumnName="COMHEAPUA" />
+          <ScalarProperty Name="COMHEASPEC" ColumnName="COMHEASPEC" />
+          <ScalarProperty Name="COMAHEPUA" ColumnName="COMAHEPUA" />
+          <ScalarProperty Name="COMAHESPEC" ColumnName="COMAHESPEC" />
+          <ScalarProperty Name="COMWHEPUA" ColumnName="COMWHEPUA" />
+          <ScalarProperty Name="COMWHESPEC" ColumnName="COMWHESPEC" />
+          <ScalarProperty Name="COMHOSPUA" ColumnName="COMHOSPUA" />
+          <ScalarProperty Name="COMHOSSPEC" ColumnName="COMHOSSPEC" />
+          <ScalarProperty Name="COMMMPUA" ColumnName="COMMMPUA" />
+          <ScalarProperty Name="COMMMSPEC" ColumnName="COMMMSPEC" />
+          <ScalarProperty Name="COMSVPUA" ColumnName="COMSVPUA" />
+          <ScalarProperty Name="COMSVSPEC" ColumnName="COMSVSPEC" />
+          <ScalarProperty Name="COMSGPUA" ColumnName="COMSGPUA" />
+          <ScalarProperty Name="COMSGSPEC" ColumnName="COMSGSPEC" />
+          <ScalarProperty Name="COMVPPUA" ColumnName="COMVPPUA" />
+          <ScalarProperty Name="COMVPSPEC" ColumnName="COMVPSPEC" />
+          <ScalarProperty Name="COMTSPUA" ColumnName="COMTSPUA" />
+          <ScalarProperty Name="COMTSSPEC" ColumnName="COMTSSPEC" />
+          <ScalarProperty Name="COMTPUA" ColumnName="COMTPUA" />
+          <ScalarProperty Name="COMTSPEC" ColumnName="COMTSPEC" />
+          <ScalarProperty Name="MPGCC1" ColumnName="MPGCC1" />
+          <ScalarProperty Name="MPGCC2" ColumnName="MPGCC2" />
+          <ScalarProperty Name="MPGCC3" ColumnName="MPGCC3" />
+          <ScalarProperty Name="MPGCC4" ColumnName="MPGCC4" />
+          <ScalarProperty Name="MPGHB1" ColumnName="MPGHB1" />
+          <ScalarProperty Name="MPGHB2" ColumnName="MPGHB2" />
+          <ScalarProperty Name="MPGHB3" ColumnName="MPGHB3" />
+          <ScalarProperty Name="MPGHB4" ColumnName="MPGHB4" />
+          <ScalarProperty Name="MPGHB5" ColumnName="MPGHB5" />
+          <ScalarProperty Name="MPGVB1" ColumnName="MPGVB1" />
+          <ScalarProperty Name="MPGVB2" ColumnName="MPGVB2" />
+          <ScalarProperty Name="MPGVB3" ColumnName="MPGVB3" />
+          <ScalarProperty Name="MPGVB4" ColumnName="MPGVB4" />
+          <ScalarProperty Name="MPGVB5" ColumnName="MPGVB5" />
+          <ScalarProperty Name="MPGVS1" ColumnName="MPGVS1" />
+          <ScalarProperty Name="MPGVS2" ColumnName="MPGVS2" />
+          <ScalarProperty Name="MPGVS3" ColumnName="MPGVS3" />
+          <ScalarProperty Name="MPGVS4" ColumnName="MPGVS4" />
+          <ScalarProperty Name="MPGVS5" ColumnName="MPGVS5" />
+          <ScalarProperty Name="ResType" ColumnName="ResType" />
+          <ScalarProperty Name="ElecConnections" ColumnName="ElecConnections" />
+          <ScalarProperty Name="SoundTestFlowAndPressure" ColumnName="SoundTestFlowAndPressure" />
+          <ScalarProperty Name="SoundTestFlow" ColumnName="SoundTestFlow" />
+          <ScalarProperty Name="SoundTestDeadhead" ColumnName="SoundTestDeadhead" />
+          <ScalarProperty Name="VibrationTestFlowAndPressure" ColumnName="VibrationTestFlowAndPressure" />
+          <ScalarProperty Name="VibrationTestFlow" ColumnName="VibrationTestFlow" />
+          <ScalarProperty Name="VibrationTestDeadhead" ColumnName="VibrationTestDeadhead" />
+          <ScalarProperty Name="VibrationNumTestPoints" ColumnName="VibrationNumTestPoints" />
+          <ScalarProperty Name="CustomerTitleBlock" ColumnName="CustomerTitleBlock" />
+          <ScalarProperty Name="SpecialDimensioning" ColumnName="SpecialDimensioning" />
+          <ScalarProperty Name="ResStyle" ColumnName="ResStyle" />
+          <ScalarProperty Name="ComplexSchematic" ColumnName="ComplexSchematic" />
+          <ScalarProperty Name="LabelType" ColumnName="LabelType" />
+          <ScalarProperty Name="CustomerWitness" ColumnName="CustomerWitness" />
+          <ScalarProperty Name="CableType" ColumnName="CableType" />
+          <ScalarProperty Name="CableExplosion" ColumnName="CableExplosion" />
+          <ScalarProperty Name="CableQty" ColumnName="CableQty" />
+          <ScalarProperty Name="FittingType" ColumnName="FittingType" />
+          <ScalarProperty Name="Fitting1Qty" ColumnName="Fitting1Qty" />
+          <ScalarProperty Name="Fitting2Qty" ColumnName="Fitting2Qty" />
+          <ScalarProperty Name="Fitting3Qty" ColumnName="Fitting3Qty" />
+          <ScalarProperty Name="Fitting4Qty" ColumnName="Fitting4Qty" />
+          <ScalarProperty Name="PanelMtdValvesStd" ColumnName="PanelMtdValvesStd" />
+          <ScalarProperty Name="PanelMtdValvesNonStd" ColumnName="PanelMtdValvesNonStd" />
+          <ScalarProperty Name="ElecBoxStd" ColumnName="ElecBoxStd" />
+          <ScalarProperty Name="ElecBoxNonStd" ColumnName="ElecBoxNonStd" />
+          <ScalarProperty Name="auto" ColumnName="auto" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="SubassemblyID" ColumnName="SubassemblyID" />
+          <ScalarProperty Name="Adjustengineering" ColumnName="Adjustengineering" />
+          <ScalarProperty Name="Adjustdesign" ColumnName="Adjustdesign" />
+          <ScalarProperty Name="AdjustWiringDesign" ColumnName="AdjustWiringDesign" />
+          <ScalarProperty Name="AdjustPickParts" ColumnName="AdjustPickParts" />
+          <ScalarProperty Name="Adjustwiring" ColumnName="Adjustwiring" />
+          <ScalarProperty Name="Adjustwelding" ColumnName="Adjustwelding" />
+          <ScalarProperty Name="Adjusttest" ColumnName="Adjusttest" />
+          <ScalarProperty Name="AdjustShippingTag" ColumnName="AdjustShippingTag" />
+          <ScalarProperty Name="Adjustpaint" ColumnName="Adjustpaint" />
+          <ScalarProperty Name="Adjustdocumentation" ColumnName="Adjustdocumentation" />
+          <ScalarProperty Name="Adjustassembly" ColumnName="Adjustassembly" />
+          <ScalarProperty Name="AdjustControlsEngineering" ColumnName="AdjustControlsEngineering" />
+          <ScalarProperty Name="AdjustProgramming" ColumnName="AdjustProgramming" />
+          <ScalarProperty Name="AdjustIM_Machining_Man" ColumnName="AdjustIM_Machining_Man" />
+          <ScalarProperty Name="AdjustIM_Machining_Cnc" ColumnName="AdjustIM_Machining_Cnc" />
+          <ScalarProperty Name="AdjustAssemblyHoursNonSAPPiping" ColumnName="AdjustAssemblyHoursNonSAPPiping" />
+          <ScalarProperty Name="AdjustEngineeringHoursNonSAPPiping" ColumnName="AdjustEngineeringHoursNonSAPPiping" />
+          <ScalarProperty Name="AdjustDesignHoursNonSAPPiping" ColumnName="AdjustDesignHoursNonSAPPiping" />
+          <ScalarProperty Name="AdjustPaintHoursNonSAPPiping" ColumnName="AdjustPaintHoursNonSAPPiping" />
+          <ScalarProperty Name="AdjustWeldingHoursNonSAPPiping" ColumnName="AdjustWeldingHoursNonSAPPiping" />
+          <ScalarProperty Name="AdjustDescriptionDetails" ColumnName="AdjustDescriptionDetails" />
+          <ScalarProperty Name="NonAdjustDescriptionDetails" ColumnName="NonAdjustDescriptionDetails" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Labor_Tmp">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Labor_Tmp">
+        <MappingFragment StoreEntitySet="T_Labor_Tmp">
+          <ScalarProperty Name="QN" ColumnName="QN" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="engineering" ColumnName="engineering" />
+          <ScalarProperty Name="design" ColumnName="design" />
+          <ScalarProperty Name="assembly" ColumnName="assembly" />
+          <ScalarProperty Name="wiring" ColumnName="wiring" />
+          <ScalarProperty Name="welding" ColumnName="welding" />
+          <ScalarProperty Name="test" ColumnName="test" />
+          <ScalarProperty Name="paint" ColumnName="paint" />
+          <ScalarProperty Name="documentation" ColumnName="documentation" />
+          <ScalarProperty Name="labor_total" ColumnName="labor_total" />
+          <ScalarProperty Name="labor_margin" ColumnName="labor_margin" />
+          <ScalarProperty Name="labor_net_total" ColumnName="labor_net_total" />
+          <ScalarProperty Name="auto" ColumnName="auto" />
+          <ScalarProperty Name="WiringDesign" ColumnName="WiringDesign" />
+          <ScalarProperty Name="TestHydraulic" ColumnName="TestHydraulic" />
+          <ScalarProperty Name="TestSound" ColumnName="TestSound" />
+          <ScalarProperty Name="TestVibration" ColumnName="TestVibration" />
+          <ScalarProperty Name="ShippingTag" ColumnName="ShippingTag" />
+          <ScalarProperty Name="PickParts" ColumnName="PickParts" />
+          <ScalarProperty Name="TotalLaborDollars" ColumnName="TotalLaborDollars" />
+          <ScalarProperty Name="TotalLabor" ColumnName="TotalLabor" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="SubassemblyID" ColumnName="SubassemblyID" />
+          <ScalarProperty Name="ControlsEngineering" ColumnName="ControlsEngineering" />
+          <ScalarProperty Name="Programming" ColumnName="Programming" />
+          <ScalarProperty Name="IM_Machining_Man" ColumnName="IM_Machining_Man" />
+          <ScalarProperty Name="IM_Machining_CNC" ColumnName="IM_Machining_CNC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_MaterialCostFactors">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_MaterialCostFactors">
+        <MappingFragment StoreEntitySet="T_MaterialCostFactors">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CostFactor" ColumnName="CostFactor" />
+          <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Piping_PaintDetail">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Piping_PaintDetail">
+        <MappingFragment StoreEntitySet="T_Piping_PaintDetail">
+          <ScalarProperty Name="PaintID" ColumnName="PaintID" />
+          <ScalarProperty Name="Paint_Type" ColumnName="Paint_Type" />
+          <ScalarProperty Name="Paint_Description" ColumnName="Paint_Description" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="metal_type" ColumnName="metal_type" />
+          <ScalarProperty Name="flgStatus" ColumnName="flgStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_PipingLabor_Data_Tmp">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_PipingLabor_Data_Tmp">
+        <MappingFragment StoreEntitySet="T_PipingLabor_Data_Tmp">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="QN" ColumnName="QN" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="subassemblyid" ColumnName="subassemblyid" />
+          <ScalarProperty Name="Conduit" ColumnName="Conduit" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="Joint" ColumnName="Joint" />
+          <ScalarProperty Name="Paint_Details" ColumnName="Paint_Details" />
+          <ScalarProperty Name="Method" ColumnName="Method" />
+          <ScalarProperty Name="component" ColumnName="component" />
+          <ScalarProperty Name="size" ColumnName="size" />
+          <ScalarProperty Name="schedule" ColumnName="schedule" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="PackageQty" ColumnName="PackageQty" />
+          <ScalarProperty Name="PartQty" ColumnName="PartQty" />
+          <ScalarProperty Name="PN" ColumnName="PN" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="TotalCost" ColumnName="TotalCost" />
+          <ScalarProperty Name="PipingPackageID" ColumnName="PipingPackageID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_PipingType">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_PipingType">
+        <MappingFragment StoreEntitySet="T_PipingType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Piping_Type" ColumnName="Piping Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_qts_tblPUAdescr">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_qts_tblPUAdescr">
+        <MappingFragment StoreEntitySet="T_qts_tblPUAdescr">
+          <ScalarProperty Name="SHEET_NO" ColumnName="SHEET NO" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="SECT" ColumnName="SECT" />
+          <ScalarProperty Name="FILENAME" ColumnName="FILENAME" />
+          <ScalarProperty Name="Field5" ColumnName="Field5" />
+          <ScalarProperty Name="Auto" ColumnName="Auto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Quote_Parts_Tmp">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Quote_Parts_Tmp">
+        <MappingFragment StoreEntitySet="T_Quote_Parts_Tmp">
+          <ScalarProperty Name="sub" ColumnName="sub" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="LI" ColumnName="LI" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="PN" ColumnName="PN" />
+          <ScalarProperty Name="TP" ColumnName="TP" />
+          <ScalarProperty Name="descr" ColumnName="descr" />
+          <ScalarProperty Name="net_cost" ColumnName="net_cost" />
+          <ScalarProperty Name="cost" ColumnName="cost" />
+          <ScalarProperty Name="part_markup" ColumnName="part_markup" />
+          <ScalarProperty Name="revision" ColumnName="revision" />
+          <ScalarProperty Name="auto" ColumnName="auto" />
+          <ScalarProperty Name="QN" ColumnName="QN" />
+          <ScalarProperty Name="PipingWelding" ColumnName="PipingWelding" />
+          <ScalarProperty Name="PipingAssembly" ColumnName="PipingAssembly" />
+          <ScalarProperty Name="materialoverhead" ColumnName="materialoverhead" />
+          <ScalarProperty Name="plantadministration" ColumnName="plantadministration" />
+          <ScalarProperty Name="manufacturingcost" ColumnName="manufacturingcost" />
+          <ScalarProperty Name="sga" ColumnName="sga" />
+          <ScalarProperty Name="riskfactor" ColumnName="riskfactor" />
+          <ScalarProperty Name="sellprice" ColumnName="sellprice" />
+          <ScalarProperty Name="CopyFrom" ColumnName="CopyFrom" />
+          <ScalarProperty Name="UserDesc" ColumnName="UserDesc" />
+          <ScalarProperty Name="ShippableAssemblyId" ColumnName="ShippableAssemblyId" />
+          <ScalarProperty Name="SubOrder" ColumnName="SubOrder" />
+          <ScalarProperty Name="IsCostChanged" ColumnName="IsCostChanged" />
+          <ScalarProperty Name="InternalNote" ColumnName="InternalNote" />
+          <ScalarProperty Name="IsCostIncrease" ColumnName="IsCostIncrease" />
+          <ScalarProperty Name="SAPCost" ColumnName="SAPCost" />
+          <ScalarProperty Name="SAPNetCost" ColumnName="SAPNetCost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Quote_Sections_Tmp">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Quote_Sections_Tmp">
+        <MappingFragment StoreEntitySet="T_Quote_Sections_Tmp">
+          <ScalarProperty Name="QN" ColumnName="QN" />
+          <ScalarProperty Name="section" ColumnName="section" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="descr" ColumnName="descr" />
+          <ScalarProperty Name="section_markup" ColumnName="section_markup" />
+          <ScalarProperty Name="part_number" ColumnName="part_number" />
+          <ScalarProperty Name="sap_descr" ColumnName="sap_descr" />
+          <ScalarProperty Name="revision" ColumnName="revision" />
+          <ScalarProperty Name="section_cost" ColumnName="section_cost" />
+          <ScalarProperty Name="sect_net_cost" ColumnName="sect_net_cost" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="DefaultPartMargin" ColumnName="DefaultPartMargin" />
+          <ScalarProperty Name="plantadministration" ColumnName="plantadministration" />
+          <ScalarProperty Name="manufacturingcost" ColumnName="manufacturingcost" />
+          <ScalarProperty Name="sga" ColumnName="sga" />
+          <ScalarProperty Name="riskfactor" ColumnName="riskfactor" />
+          <ScalarProperty Name="sellprice" ColumnName="sellprice" />
+          <ScalarProperty Name="labor_tot" ColumnName="labor_tot" />
+          <ScalarProperty Name="commission" ColumnName="commission" />
+          <ScalarProperty Name="materialoverhead" ColumnName="materialoverhead" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="auto" ColumnName="auto" />
+          <ScalarProperty Name="SectionOrder" ColumnName="SectionOrder" />
+          <ScalarProperty Name="RiskFactorPercentage" ColumnName="RiskFactorPercentage" />
+          <ScalarProperty Name="SGAPercentage" ColumnName="SGAPercentage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_Quote_Sub_Tmp">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_Quote_Sub_Tmp">
+        <MappingFragment StoreEntitySet="T_Quote_Sub_Tmp">
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="LI" ColumnName="LI" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="pn" ColumnName="pn" />
+          <ScalarProperty Name="tp" ColumnName="tp" />
+          <ScalarProperty Name="descr" ColumnName="descr" />
+          <ScalarProperty Name="net_cost" ColumnName="net_cost" />
+          <ScalarProperty Name="cost" ColumnName="cost" />
+          <ScalarProperty Name="part_markup" ColumnName="part_markup" />
+          <ScalarProperty Name="revision" ColumnName="revision" />
+          <ScalarProperty Name="auto" ColumnName="auto" />
+          <ScalarProperty Name="sub_descr" ColumnName="sub_descr" />
+          <ScalarProperty Name="QN" ColumnName="QN" />
+          <ScalarProperty Name="PipingWelding" ColumnName="PipingWelding" />
+          <ScalarProperty Name="PipingAssembly" ColumnName="PipingAssembly" />
+          <ScalarProperty Name="UserDesc" ColumnName="UserDesc" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="IsCostChanged" ColumnName="IsCostChanged" />
+          <ScalarProperty Name="InternalNote" ColumnName="InternalNote" />
+          <ScalarProperty Name="IsCostIncrease" ColumnName="IsCostIncrease" />
+          <ScalarProperty Name="SAPCost" ColumnName="SAPCost" />
+          <ScalarProperty Name="SAPNetCost" ColumnName="SAPNetCost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_sap_customer">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_sap_customer">
+        <MappingFragment StoreEntitySet="T_sap_customer">
+          <ScalarProperty Name="Customer" ColumnName="Customer" />
+          <ScalarProperty Name="Name1" ColumnName="Name1" />
+          <ScalarProperty Name="Name2" ColumnName="Name2" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="POBox" ColumnName="POBox" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Rg" ColumnName="Rg" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="Cty" ColumnName="Cty" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="SalesOfficeId" ColumnName="SalesOfficeId" />
+          <ScalarProperty Name="SalesGroupId" ColumnName="SalesGroupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_SAPCustomersImport_Temp">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_SAPCustomersImport_Temp">
+        <MappingFragment StoreEntitySet="T_SAPCustomersImport_Temp">
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="Customer" ColumnName="Customer" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LastUpdatedBy" ColumnName="LastUpdatedBy" />
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_sapmats">
+      <EntityTypeMapping TypeName="QuoteSystemModel.T_sapmats">
+        <MappingFragment StoreEntitySet="T_sapmats">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="Material_number" ColumnName="Material number" />
+          <ScalarProperty Name="PGr" ColumnName="PGr" />
+          <ScalarProperty Name="Purchasing_group" ColumnName="Purchasing group" />
+          <ScalarProperty Name="MRPCn" ColumnName="MRPCn" />
+          <ScalarProperty Name="MRP_controller" ColumnName="MRP controller" />
+          <ScalarProperty Name="MS" ColumnName="MS" />
+          <ScalarProperty Name="Plant_Specific_Material_Status" ColumnName="Plant-Specific Material Status" />
+          <ScalarProperty Name="Product_hierarchy" ColumnName="Product hierarchy" />
+          <ScalarProperty Name="Field11" ColumnName="Field11" />
+          <ScalarProperty Name="Total_stock" ColumnName="Total stock" />
+          <ScalarProperty Name="BUn" ColumnName="BUn" />
+          <ScalarProperty Name="Standard_price" ColumnName="Standard price" />
+          <ScalarProperty Name="Comsumption" ColumnName="Comsumption" />
+          <ScalarProperty Name="MG_2" ColumnName="MG 2" />
+          <ScalarProperty Name="Material_group_2" ColumnName="Material group 2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
